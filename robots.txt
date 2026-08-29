@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lowxxy.github.io/lowxxy-discover/sitemap.xml
