@@ -62,11 +62,17 @@ body::before {
   border-bottom: 1px solid var(--line);
 }
 .brand-mark {
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 900;
-  letter-spacing: -.04em;
 }
+.brand-wordmark-img {
+  display: block;
+  width: 112px;
+  max-height: 34px;
+  object-fit: contain;
+}
+
 .top-tag {
   font-size: .65rem;
   letter-spacing: .2em;
@@ -152,12 +158,15 @@ main, footer { position: relative; z-index: 2; }
 .hero h1 {
   position: relative;
   margin: 0;
-  font-size: clamp(4rem, 13vw, 8.6rem);
-  line-height: .84;
-  letter-spacing: -.07em;
-  font-weight: 1000;
-  text-shadow: 2px 0 rgba(255,255,255,.08), -2px 0 rgba(255,255,255,.04);
+  line-height: 1;
   animation: logoFlicker 5.5s infinite;
+}
+.hero-wordmark-img {
+  display: block;
+  width: min(620px, 88%);
+  height: auto;
+  object-fit: contain;
+  object-position: left center;
 }
 @keyframes logoFlicker {
   0%, 93%, 96%, 100% { opacity: 1; transform: translateX(0); }
@@ -391,96 +400,3 @@ footer {
 }
 
 .micro-flicker { filter: brightness(1.12) contrast(1.03); }
-
-/* =========================================
-   V3 — OFFICIAL LOWXXY WORDMARK + LOGO
-   Uses the supplied Lowxxy artwork instead of a generic text font.
-   ========================================= */
-
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  width: clamp(110px, 13vw, 150px);
-}
-
-.brand-mark img {
-  display: block;
-  width: 100%;
-  height: auto;
-  filter: invert(1);
-}
-
-.visual-logo {
-  width: min(470px, 74vw);
-  margin: 0 !important;
-  line-height: 0 !important;
-  font-size: 0 !important;
-  animation: logoFlicker 5.5s infinite;
-}
-
-.visual-logo img {
-  display: block;
-  width: 100%;
-  height: auto;
-  filter: invert(1);
-}
-
-.section-brand {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin: 0 0 22px;
-  color: var(--gold);
-  font-size: .62rem;
-  font-weight: 800;
-  letter-spacing: .22em;
-}
-
-.section-brand img {
-  width: 108px;
-  height: auto;
-  filter: invert(1);
-  opacity: .92;
-}
-
-.final-brand-lockup {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.final-crown {
-  width: 62px;
-  height: 44px;
-  object-fit: contain;
-  filter: invert(1);
-}
-
-.final-wordmark {
-  width: 124px;
-  height: auto;
-  filter: invert(1);
-}
-
-.footer-brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-}
-
-.footer-brand img {
-  width: 74px;
-  height: auto;
-  filter: invert(1);
-  opacity: .9;
-}
-
-@media (max-width: 650px) {
-  .brand-mark { width: 104px; }
-  .visual-logo { width: min(350px, 82vw); }
-  .section-brand img { width: 92px; }
-  .final-crown { width: 52px; }
-  .final-wordmark { width: 108px; }
-}
