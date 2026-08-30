@@ -46,7 +46,7 @@ img{display:block;max-width:100%}
 .camera-side{
   position:absolute;
   left:0;
-  top:34px;
+  top:18px;
   width:760px;
   height:650px;
   display:flex;
@@ -66,7 +66,7 @@ img{display:block;max-width:100%}
   filter:grayscale(1) saturate(0) contrast(1.18) brightness(.9);
   mix-blend-mode:screen;
   opacity:.99;
-  transform:translate(10px,-92px) scale(1.01);
+  transform:translate(10px,-60px) scale(1.01);
   transform-origin:left top;
 }
 .scribble{
@@ -242,45 +242,258 @@ footer span{font-size:10px;letter-spacing:.25em;color:#817e76}
 }
 
 @media (max-width:1100px){
-  .hero-editorial{grid-template-columns:1fr;min-height:auto;padding-top:24px;overflow:hidden}
-  .hero-center{order:1;padding:10px 0;max-width:none;transform:none}
-  .camera-side{position:relative;order:2;left:auto;bottom:auto;width:auto;height:auto;min-height:420px;justify-content:center;margin-right:0;z-index:2}
-  .hero-right-media{order:3;min-height:420px}
-  .camera-side img{height:390px;width:auto;max-width:100%;max-height:none;transform:none;mix-blend-mode:normal;filter:grayscale(1) contrast(1.1) brightness(.95)}
-  .scribble{left:8%;top:28px}
-  .vertical-film-strip{width:54%}
+  .hero-editorial{
+    min-height:auto;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:26px;
+    padding:28px 18px 34px;
+    overflow:hidden;
+  }
+
+  .hero-center{
+    order:1;
+    grid-column:auto;
+    width:min(680px,100%);
+    max-width:none;
+    justify-self:center;
+    padding:10px 0 0;
+    transform:none;
+    z-index:6;
+  }
+
+  .hero-wordmark{width:min(520px,100%)}
+
+  .camera-side{
+    order:2;
+    position:relative;
+    left:auto;
+    top:auto;
+    bottom:auto;
+    width:100%;
+    height:460px;
+    min-height:0;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    overflow:hidden;
+    z-index:4;
+  }
+
+  .camera-side img{
+    width:auto !important;
+    height:650px !important;
+    max-width:none !important;
+    max-height:none !important;
+    transform:translate(-18px,-88px) scale(1.02);
+    transform-origin:left top;
+    mix-blend-mode:screen;
+    filter:grayscale(1) saturate(0) contrast(1.16) brightness(.9);
+  }
+
+  .scribble{
+    top:34px;
+    left:8px;
+    font-size:20px;
+  }
+
+  .hero-right-media{
+    order:3;
+    min-height:0;
+    padding:4px 0 10px;
+  }
+
+  .vertical-film-strip{
+    width:min(520px,78%);
+  }
+
   .hero-links{max-width:none}
   .hero-links a{padding-left:18px}
   .discover-link{max-width:none}
-  .lookbook-film-row{grid-template-columns:repeat(2,1fr)}
+
+  .lookbook-film-row{
+    grid-template-columns:repeat(2,1fr);
+    gap:10px;
+  }
   .lookbook-film-row figure{aspect-ratio:4/5}
+
   .discovery-copy{grid-template-columns:1fr;gap:28px}
   .final-links{grid-template-columns:1fr}
   .final-links a{border-right:0;border-bottom:1px solid var(--line)}
 }
 
 @media (max-width:700px){
-  .topbar{padding:0 18px;height:58px}
-  .brand img{width:86px}
-  .motto{font-size:8px;letter-spacing:.18em}
-  .hero-editorial{padding:20px 15px}
-  .hero-sub{font-size:15px}
-  .hero-links a{grid-template-columns:76px 1fr 22px;padding:0 12px;min-height:58px}
-  .hero-links strong{font-size:14px}
-  .camera-side{min-height:320px}
-  .camera-side img{height:310px}
-  .scribble{font-size:18px;left:2%}
-  .hero-right-media{min-height:350px}
-  .vertical-film-strip{width:72%}
-  .film-frame img{height:118px}
-  .fabric-card{width:110px;height:110px;left:0}
-  .lookbook-grid{padding:30px 14px 38px}
-  .lookbook-topline{display:block}
-  .lookbook-topline h2{font-size:31px;margin-top:8px;text-align:left}
-  .lookbook-film-row{grid-template-columns:1fr 1fr}
-  .lookbook-film-row figure{aspect-ratio:4/5}
-  .discovery-copy{padding:54px 18px}
-  .discovery-copy h2{font-size:34px}
-  .final-links a{padding:22px 18px}
-  footer{padding:24px 18px}
+  .topbar{
+    padding:0 16px;
+    height:56px;
+  }
+  .brand img{width:82px}
+  .motto{
+    font-size:7px;
+    letter-spacing:.16em;
+    white-space:nowrap;
+  }
+
+  .hero-editorial{
+    padding:18px 12px 26px;
+    gap:18px;
+  }
+
+  .hero-center{
+    width:100%;
+    padding:6px 4px 0;
+  }
+
+  .kicker{
+    font-size:9px;
+    margin-bottom:12px;
+  }
+
+  .hero-wordmark{
+    width:min(330px,92%);
+    margin:0 0 16px;
+  }
+
+  .hero-sub{
+    font-size:14px;
+    line-height:1.45;
+    margin-bottom:18px;
+  }
+
+  .hero-sub br{display:none}
+
+  .hero-links{
+    gap:9px;
+  }
+
+  .hero-links a{
+    grid-template-columns:66px 1fr 20px;
+    min-height:54px;
+    padding:0 11px;
+  }
+
+  .hero-links span{
+    font-size:8px;
+    letter-spacing:.14em;
+  }
+
+  .hero-links strong{
+    font-size:13px;
+  }
+
+  .hero-links b{
+    font-size:18px;
+  }
+
+  .discover-link{
+    margin-top:20px;
+    font-size:8px;
+  }
+
+  .camera-side{
+    height:355px;
+    margin-top:-4px;
+  }
+
+  .camera-side img{
+    height:515px !important;
+    transform:translate(-18px,-72px) scale(1.02);
+  }
+
+  .scribble{
+    top:26px;
+    left:0;
+    font-size:16px;
+    opacity:.62;
+  }
+
+  .hero-right-media{
+    padding:0 0 8px;
+  }
+
+  .vertical-film-strip{
+    width:86%;
+    padding:16px 10px;
+    transform:rotate(2.5deg);
+  }
+
+  .film-frame img{
+    height:104px;
+  }
+
+  .tape-right{
+    width:82px;
+    height:26px;
+    right:3%;
+    top:10px;
+  }
+
+  .fabric-card{
+    width:94px;
+    height:94px;
+    left:2%;
+    bottom:16px;
+  }
+
+  .fabric-card span{font-size:30px}
+  .fabric-card small{font-size:7px}
+
+  .lookbook-grid{
+    padding:24px 10px 30px;
+  }
+
+  .lookbook-topline{
+    display:block;
+    margin-bottom:12px;
+  }
+
+  .lookbook-topline h2{
+    font-size:28px;
+    margin-top:6px;
+    text-align:left;
+  }
+
+  .lookbook-film-row{
+    grid-template-columns:1fr;
+    gap:8px;
+    padding:14px 8px;
+  }
+
+  .lookbook-film-row figure{
+    aspect-ratio:4/5;
+  }
+
+  .lookbook-film-row img{
+    object-fit:contain;
+  }
+
+  .discovery-copy{
+    padding:46px 16px;
+  }
+
+  .discovery-copy h2{
+    font-size:31px;
+  }
+
+  .copy-grid{
+    font-size:14px;
+  }
+
+  .final-links a{
+    padding:20px 16px;
+    font-size:13px;
+  }
+
+  footer{
+    padding:22px 16px;
+  }
+
+  footer img{
+    width:92px;
+  }
+
+  footer span{
+    font-size:8px;
+    letter-spacing:.18em;
+  }
 }
