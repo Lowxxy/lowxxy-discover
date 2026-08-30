@@ -1,5 +1,6 @@
-# Lowxxy Discover V5 — Wordmark Branding
+# Lowxxy Discover V6
 
-This version keeps the original V2 design and swaps the standalone Lowxxy branding for the approved wordmark image. Button labels remain normal text exactly as requested.
+Same V5 wordmark placement, but the wordmark images are constrained by HEIGHT to match the original text sizing and prevent the logo image from expanding the layout.
 
-Upload/replace the files in the root of the `lowxxy-discover` repo. Keep your Google verification HTML file in place.
+Buttons remain normal text.
+Keep your existing Google verification HTML file in the repo.

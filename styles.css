@@ -446,3 +446,35 @@ footer {
   .final-brand-eyebrow img { width: 84px; }
   .footer-brand { justify-content: center; }
 }
+
+/* V6 sizing fix: keep official wordmark at the exact visual scale of the original text */
+.brand-mark img {
+  width: auto !important;
+  height: 19px !important;
+  max-width: 150px;
+}
+.hero-wordmark img {
+  width: auto !important;
+  height: clamp(64px, 8.2vw, 138px) !important;
+  max-width: 100%;
+}
+.brand-eyebrow img {
+  width: auto !important;
+  height: 10px !important;
+}
+.final-brand-eyebrow img {
+  width: auto !important;
+  height: 10px !important;
+}
+.footer-brand img {
+  width: auto !important;
+  height: 10px !important;
+}
+
+@media (max-width: 760px) {
+  .brand-mark img { height: 17px !important; }
+  .hero-wordmark img { height: clamp(58px, 19vw, 98px) !important; }
+  .brand-eyebrow img,
+  .final-brand-eyebrow img,
+  .footer-brand img { height: 9px !important; }
+}
