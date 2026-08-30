@@ -45,10 +45,10 @@ img{display:block;max-width:100%}
 
 .camera-side{
   position:absolute;
-  left:-110px;
-  bottom:-120px;
-  width:980px;
-  height:860px;
+  left:-70px;
+  bottom:-70px;
+  width:860px;
+  height:760px;
   display:flex;
   align-items:flex-end;
   justify-content:flex-start;
@@ -57,7 +57,7 @@ img{display:block;max-width:100%}
   overflow:visible;
 }
 .camera-side img{
-  width:1020px !important;
+  width:860px !important;
   max-width:none !important;
   max-height:none !important;
   object-fit:contain;
@@ -65,7 +65,7 @@ img{display:block;max-width:100%}
   filter:grayscale(1) saturate(0) contrast(1.18) brightness(.88);
   mix-blend-mode:screen;
   opacity:.99;
-  transform:translate(110px,95px) scale(1.45);
+  transform:translate(70px,55px) scale(1.16);
   transform-origin:left bottom;
 }
 .scribble{
@@ -85,7 +85,7 @@ img{display:block;max-width:100%}
 .hero-center{
   position:relative;
   z-index:5;
-  padding:36px 8px 20px 430px;
+  padding:36px 8px 20px 470px;
   max-width:1180px;
 }
 .kicker{font-size:11px;letter-spacing:.24em;color:var(--gold);font-weight:800;margin:0 0 20px}
@@ -212,16 +212,16 @@ footer img{width:110px}
 footer span{font-size:10px;letter-spacing:.25em;color:#817e76}
 
 @media (max-width:1450px){
-  .hero-center{padding-left:405px}
-  .camera-side{left:-105px;bottom:-110px;width:930px;height:830px}
-  .camera-side img{width:980px !important;max-width:none !important;transform:translate(100px,90px) scale(1.38)}
+  .hero-center{padding-left:455px}
+  .camera-side{left:-72px;bottom:-72px;width:830px;height:740px}
+  .camera-side img{width:850px !important;max-width:none !important;transform:translate(68px,52px) scale(1.14)}
 }
 
 @media (max-width:1250px){
   .hero-editorial{grid-template-columns:minmax(0,1fr) minmax(260px,.86fr);gap:24px}
-  .hero-center{padding-left:350px}
-  .camera-side{left:-95px;bottom:-85px;width:820px;height:760px}
-  .camera-side img{width:900px !important;max-width:none !important;transform:translate(85px,70px) scale(1.28)}
+  .hero-center{padding-left:390px}
+  .camera-side{left:-65px;bottom:-60px;width:760px;height:690px}
+  .camera-side img{width:790px !important;max-width:none !important;transform:translate(58px,45px) scale(1.10)}
   .hero-links a{padding-left:54px}
   .lookbook-film-row figure{aspect-ratio:7/9}
 }
