@@ -523,18 +523,18 @@ footer span{font-size:10px;letter-spacing:.25em;color:#817e76}
     overflow:visible;
   }
   .hero-right-media::before{
-    width:128px;
-    height:185px;
-    left:-30px;
-    top:50px;
+    width:148px;
+    height:210px;
+    left:-38px;
+    top:38px;
     transform:rotate(7deg);
     filter:blur(7px);
     opacity:.88;
   }
   .editorial-photo-single{
-    width:102px;
+    width:122px;
     aspect-ratio:4/5;
-    margin:10px 0 0 0;
+    margin:8px 0 0 -8px;
     padding:6px 6px 12px;
     transform:rotate(7deg);
     box-shadow:0 14px 30px rgba(0,0,0,.72);
@@ -551,49 +551,51 @@ footer span{font-size:10px;letter-spacing:.25em;color:#817e76}
     filter:grayscale(1) contrast(1.08) brightness(1.0);
   }
   .tape-main{
-    width:46px;
-    height:9px;
+    width:54px;
+    height:10px;
     top:-5px;
-    left:27px;
-  }
-  .tape-shadow{
-    width:58px;
-    height:8px;
-    top:-2px;
     left:33px;
   }
+  .tape-shadow{
+    width:66px;
+    height:8px;
+    top:-2px;
+    left:40px;
+  }
 
-  /* Lens is around the right side of the scaled camera; start the beam there. */
+  /* Phone projector beam: originate at the camera's front lens, not the camera body. */
   .camera-beam{
-    left:70px;
-    top:193px;
-    width:230px;
-    height:62px;
+    left:145px;
+    top:147px;
+    width:190px;
+    height:56px;
     z-index:12;
-    opacity:.86;
+    opacity:.88;
     filter:blur(.9px);
-    clip-path:polygon(0 44%,0 56%,100% 84%,100% 16%);
+    clip-path:polygon(0 46%,0 54%,100% 82%,100% 18%);
+    transform:rotate(1.2deg);
+    transform-origin:left center;
     background:
-      radial-gradient(circle at 3% 50%, rgba(255,255,255,1) 0 5px, rgba(255,248,220,.90) 6px 20px, rgba(255,255,255,0) 31px),
-      linear-gradient(90deg, rgba(255,245,220,.86) 0%, rgba(255,235,195,.46) 22%, rgba(255,230,186,.18) 50%, rgba(255,255,255,0) 100%);
+      radial-gradient(circle at 2% 50%, rgba(255,255,255,1) 0 4px, rgba(255,248,220,.92) 5px 17px, rgba(255,255,255,0) 27px),
+      linear-gradient(90deg, rgba(255,245,220,.88) 0%, rgba(255,235,195,.48) 24%, rgba(255,230,186,.18) 54%, rgba(255,255,255,0) 100%);
   }
   .camera-flare{
-    left:80px;
-    top:181px;
-    width:42px;
-    height:42px;
+    left:132px;
+    top:135px;
+    width:38px;
+    height:38px;
     z-index:13;
     filter:blur(7px);
   }
   .photo-cast{
     display:block;
-    right:2px;
-    top:55px;
-    width:116px;
-    height:176px;
+    right:-8px;
+    top:42px;
+    width:138px;
+    height:200px;
     transform:rotate(8deg);
     filter:blur(7px);
-    opacity:.76;
+    opacity:.78;
   }
 
   /* MOBILE LOOKBOOK: compact film strip + horizontal swipe */
