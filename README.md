@@ -1,16 +1,8 @@
-# Lowxxy V11.12 – Camera Overlap + Taped Photo
+# Lowxxy V11.14
 
-Drop these files into your `lowxxy-discover` GitHub folder and replace the existing files.
+Changes from V11.13:
+- Right taped photo is lowered to sit more vertically centered in the hero.
+- Lowxxy wordmark now has a transparent background instead of a black rectangle.
+- Camera light beam is layered in front of the Lowxxy wordmark, so the light can wash across the lettering naturally.
 
-Included:
-- `index.html`
-- `styles.css`
-- `lowxxy-wordmark.png` (if found)
-- `vintage-camera.png` (if found)
-
-Main changes:
-- camera now overlaps the button layer more like the concept
-- camera stays in the same general area
-- right-side image changed into a more obvious taped editorial photo
-- top section tightened so the elements feel closer together
-- mobile styling keeps the same direction
+Drop the files from this folder into the root of the GitHub `lowxxy-discover` repo and replace matching files.

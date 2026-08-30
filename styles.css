@@ -87,14 +87,14 @@ img{display:block;max-width:100%}
   top:255px;
   width:250px;
   height:132px;
-  z-index:5;
+  z-index:8;
   pointer-events:none;
   background:
     radial-gradient(circle at 8% 50%, rgba(255,255,255,.98) 0 5px, rgba(255,255,255,.72) 6px 22px, rgba(255,255,255,0) 36px),
     linear-gradient(90deg, rgba(255,245,220,.75) 0%, rgba(255,236,196,.38) 24%, rgba(255,241,222,.16) 54%, rgba(255,255,255,0) 100%);
   clip-path:polygon(0 46%, 0 54%, 100% 84%, 100% 16%);
   filter:blur(1.4px);
-  opacity:.95;
+  opacity:.92;
   mix-blend-mode:screen;
 }
 .camera-flare{
@@ -103,7 +103,7 @@ img{display:block;max-width:100%}
   top:210px;
   width:230px;
   height:200px;
-  z-index:4;
+  z-index:7;
   pointer-events:none;
   background:radial-gradient(circle, rgba(255,232,185,.24) 0%, rgba(255,221,164,.12) 34%, rgba(255,255,255,0) 72%);
   filter:blur(12px);
@@ -117,7 +117,7 @@ img{display:block;max-width:100%}
   max-width:470px;
 }
 .kicker{font-size:12px;letter-spacing:.24em;color:var(--gold);font-weight:800;margin:0 0 16px}
-.hero-wordmark{width:min(470px,100%);height:auto;margin:0 0 18px}
+.hero-wordmark{width:min(470px,100%);height:auto;margin:0 0 18px;background:transparent;position:relative;z-index:6}
 .hero-sub{font-size:19px;line-height:1.42;color:#dedbd4;margin:0 0 22px;max-width:430px}
 .hero-links{display:grid;gap:12px;position:relative;z-index:6}
 .hero-links a{
@@ -157,14 +157,14 @@ img{display:block;max-width:100%}
   display:flex;
   align-items:flex-start;
   justify-content:flex-start;
-  padding-top:14px;
+  padding-top:88px;
   padding-left:8px;
 }
 .editorial-photo-single{
   position:relative;
   width:360px;
   aspect-ratio:4/5;
-  margin:6px 0 0 0;
+  margin:0;
   overflow:visible;
   background:#090909;
   border:1px solid rgba(255,255,255,.24);
@@ -313,7 +313,7 @@ footer span{font-size:10px;letter-spacing:.25em;color:#817e76}
   .hero-right-media{
     order:3;
     justify-content:center;
-    padding-top:4px;
+    padding-top:36px;
     padding-left:0;
   }
   .editorial-photo-single{width:min(340px,74vw);transform:rotate(6deg)}
@@ -355,7 +355,7 @@ footer span{font-size:10px;letter-spacing:.25em;color:#817e76}
   .hero-links b{font-size:18px}
   .discover-link{margin-top:14px;font-size:8px}
 
-  .hero-right-media{justify-content:center}
+  .hero-right-media{justify-content:center;padding-top:24px}
   .editorial-photo-single{width:min(270px,78vw);padding:10px 10px 20px;transform:rotate(6deg)}
   .editorial-photo-single:before{inset:-8px 12px 8px -8px}
   .tape-main{width:100px;height:20px;top:-8px;left:82px}
