@@ -1,18 +1,14 @@
-Lowxxy V11.22 - Mobile Centered + Smaller Reel
+Lowxxy V11.23 — Mobile Centering + Camera Light Alignment Fix
 
-Use this as a drop-in update for your current working Lowxxy Discover page.
-
-Replace:
+Replace these files in your GitHub project root/folder:
 - index.html
-
-Only replace these too if you want to keep the same asset files from this package:
+- styles.css
 - lowxxy-wordmark.png
 - vintage-camera.png
 
-Keep your current styles.css and your current shirt image files already in the repo.
-
-This update:
-- recenters the phone hero framing
-- makes the phone camera smaller and farther left
-- keeps the phone photo balanced against the camera
-- makes the mobile Made to stand out reel/cards smaller
+What changed:
+- Mobile hero content is visually centered better.
+- Camera is pushed farther left and reduced slightly on phones.
+- Projector light/beam is aligned better with the camera lens on phones.
+- Right taped photo stays balanced with the camera.
+- "Made to stand out" film reel cards are smaller on phones.
