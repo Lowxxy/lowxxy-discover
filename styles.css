@@ -392,21 +392,85 @@ footer {
 
 .micro-flicker { filter: brightness(1.12) contrast(1.03); }
 
-
-/* LOWXXY custom crossed-X wordmark treatment */
-.cross-x {
-  position: relative;
+/* LOWXXY OFFICIAL WORDMARK IMAGE */
+.lowxxy-wordmark {
   display: inline-block;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;
+  filter: none;
 }
-.cross-x::after {
-  content: "";
+
+.wordmark-top {
+  display: block;
+  width: 92px;
+  max-height: 30px;
+}
+
+.wordmark-heading {
+  margin: 0;
+  line-height: 1;
+}
+.wordmark-hero {
+  display: block;
+  width: min(590px, 92%);
+  max-height: 170px;
+  object-position: left center;
+  animation: logoFlicker 5.5s infinite;
+}
+
+.brand-inline-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.wordmark-button {
+  width: 78px;
+  max-height: 24px;
+}
+.social-brand { gap: 3px; }
+
+.brand-eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.wordmark-eyebrow {
+  width: 66px;
+  max-height: 18px;
+}
+
+.inline-wordmark-wrap {
+  display: inline-block;
+  width: 62px;
+  height: 0.95em;
+  vertical-align: -0.08em;
+  position: relative;
+}
+.wordmark-inline {
   position: absolute;
-  left: 4%;
-  right: 4%;
+  left: 0;
   top: 50%;
-  height: 0.075em;
-  background: currentColor;
+  width: 100%;
+  max-height: 1em;
   transform: translateY(-50%);
-  border-radius: 999px;
-  pointer-events: none;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.wordmark-footer {
+  width: 70px;
+  max-height: 20px;
+}
+
+@media (max-width: 760px) {
+  .wordmark-top { width: 76px; }
+  .wordmark-hero { width: min(470px, 96%); max-height: 130px; }
+  .wordmark-button { width: 68px; }
+  .wordmark-eyebrow { width: 58px; }
 }
