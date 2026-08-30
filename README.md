@@ -1,8 +1,25 @@
-# Lowxxy V11.14
+# Lowxxy V11.15 — Projected Character / Exact Drop-In
 
-Changes from V11.13:
-- Right taped photo is lowered to sit more vertically centered in the hero.
-- Lowxxy wordmark now has a transparent background instead of a black rectangle.
-- Camera light beam is layered in front of the Lowxxy wordmark, so the light can wash across the lettering naturally.
+This version is the drop-in build that matches the concept direction more closely:
 
-Drop the files from this folder into the root of the GitHub `lowxxy-discover` repo and replace matching files.
+- projected light from the vintage camera reaches the taped photo
+- right-side taped photo uses the character-back shirt image
+- taped photo is larger, angled, and visually centered in the hero
+- bottom center lookbook image is swapped to the former top photo
+- light passes over the logo area instead of feeling boxed in
+
+## Drop-in instructions
+1. Open your `lowxxy-discover` GitHub repo.
+2. Replace the root `index.html` with this `index.html`.
+3. Replace the root `styles.css` with this `styles.css`.
+4. Upload and replace the included image files in the repo root:
+   - `lowxxy-wordmark.png`
+   - `vintage-camera.png`
+   - `popart1.jpeg`
+   - `royalscript1.jpeg`
+   - `chainmail1.jpeg`
+   - `chainmail2.jpeg`
+   - `groundedgains1.jpeg`
+   - `hang2.jpeg`
+
+If your repo already has these same filenames in the root, just overwrite them.
