@@ -1,12 +1,18 @@
-LOWXXY V11.21 — Phone Camera Left + Smaller
+Lowxxy V11.22 - Mobile Centered + Smaller Reel
 
-This version keeps the mobile hero non-stacked, but moves the camera farther left and scales it down so it better matches the taped photo like the desktop layout.
+Use this as a drop-in update for your current working Lowxxy Discover page.
 
-Changes:
-- camera smaller on phone
-- camera pushed farther left on phone
-- mobile hero columns rebalanced to feel closer to desktop
-- projection beam and glow repositioned to match
-- taped photo stays prominent on the right
+Replace:
+- index.html
 
-Replace your current files with these.
+Only replace these too if you want to keep the same asset files from this package:
+- lowxxy-wordmark.png
+- vintage-camera.png
+
+Keep your current styles.css and your current shirt image files already in the repo.
+
+This update:
+- recenters the phone hero framing
+- makes the phone camera smaller and farther left
+- keeps the phone photo balanced against the camera
+- makes the mobile Made to stand out reel/cards smaller
