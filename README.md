@@ -1,13 +1,13 @@
-LOWXXY V11.18 — Phone Ratio Hero Match
+LOWXXY V11.20 — Phone Camera/Photo Match
 
-This drop-in update keeps the same cinematic desktop-style hero on mobile, but scales the phone version so it fits the narrower portrait ratio better.
+This pass keeps the mobile hero non-stacked and rebalances the two side visuals so the camera and taped photo feel closer in size, more like the desktop version.
 
 What changed:
-- mobile hero re-balanced to feel closer to the desktop composition
-- camera, center links, and taped photo all stay visible in one hero composition
-- projection beam tightened for the phone ratio
-- taped photo scaled and centered better on the right
-- film-strip styling kept around the lookbook / Made to stand out section
-- horizontal swipe slider preserved on phone
+- phone hero stays in one row instead of stacking
+- camera scaled down on mobile
+- taped photo kept prominent on mobile
+- camera and photo feel more balanced like desktop
+- projection beam/glow adjusted to match the new sizing
+- film-tape lookbook section stays in place
 
-Replace the files in your GitHub repo with the ones in this folder.
+Drop these files into your GitHub project and replace the current versions.
