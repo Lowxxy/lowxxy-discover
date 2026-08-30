@@ -1,16 +1,27 @@
-# Lowxxy Discover V10
+# Lowxxy Discover V11 — Overlap Camera Hero
 
-This version matches the newer editorial-film concept:
-- realistic vintage motion-picture camera on the left
-- Lowxxy wordmark and links centered
-- vertical film strip on the right
-- corrected lower lookbook cropping so the shirt photos fit better
-- existing SEO/search structure preserved
+This package updates the site so:
+- the film camera is black and white
+- the camera crosses into the CTA button area slightly
+- the bottom lookbook photos use a taller ratio so more of each photo is visible
 
-## Upload to GitHub
-Upload the contents of this ZIP directly into the root of `lowxxy-discover` and replace matching files.
+## Replace these files in your GitHub repo root
+- `index.html`
+- `styles.css`
+- `script.js`
+- `vintage-camera.png`
+- `lowxxy-wordmark.png` (only if you do not already have it in the repo root)
 
-Keep your existing Google verification file in the repo:
-`google38f9510eef2b1e0e.html`
+## Image files used by this version
+Keep these in the repo root:
+- `popart1.jpeg`
+- `royalscript1.jpeg`
+- `chainmail2.jpeg`
+- `groundedgains1.jpeg`
+- `hang2.jpeg`
+- `royalscript2.jpeg`
+- `chainmail1.jpeg`
 
-Keep your existing `robots.txt` and `sitemap.xml` if they are already correct.
+## Deploy
+After upload, wait a minute and refresh:
+https://lowxxy.github.io/lowxxy-discover/
