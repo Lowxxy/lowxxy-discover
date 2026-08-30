@@ -1,15 +1,11 @@
-# Lowxxy V11.16 — Mobile Cinematic Hero + Swipe Lookbook
+LOWXXY V11.17 — Mobile Desktop-Match Tuning
 
-This is a full drop-in replacement based on the approved V11.15 desktop checkpoint.
+This drop-in update keeps the approved desktop V11.15/V11.16 cinematic hero and improves the phone layout so it feels closer to the desktop composition:
 
-Desktop stays in the V11.15 projected-character layout.
+- brighter mobile hero lighting and projection beam
+- mobile camera / title / projected photo scaled to feel closer to desktop
+- mobile projected photo kept taped and more visible
+- mobile lookbook keeps film-strip tape around the section
+- horizontal swipe slider remains on phone
 
-Phone changes:
-- keeps the same hero composition instead of stacking it vertically
-- vintage camera stays on the left
-- LOWXXY title + three links stay in the center
-- projected taped character photo stays on the right
-- projector beam still runs through the center toward the photo
-- bottom lookbook becomes a horizontal swipe slider with scroll snapping
-
-Drop the contents into the root of `lowxxy-discover` and overwrite matching files.
+Replace the matching files in your GitHub repo root with these files.
