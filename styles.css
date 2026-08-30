@@ -563,27 +563,27 @@ footer span{font-size:10px;letter-spacing:.25em;color:#817e76}
     left:40px;
   }
 
-  /* Phone projector beam: originate at the camera's front lens, not the camera body. */
+  /* PHONE ONLY: beam now starts at the visible front lens of the camera. */
   .camera-beam{
-    left:145px;
-    top:147px;
-    width:190px;
-    height:56px;
+    left:92px;
+    top:238px;
+    width:272px;
+    height:70px;
     z-index:12;
-    opacity:.88;
-    filter:blur(.9px);
-    clip-path:polygon(0 46%,0 54%,100% 82%,100% 18%);
-    transform:rotate(1.2deg);
+    opacity:.92;
+    filter:blur(.8px);
+    clip-path:polygon(0 48%,0 52%,100% 82%,100% 18%);
+    transform:rotate(-4deg);
     transform-origin:left center;
     background:
-      radial-gradient(circle at 2% 50%, rgba(255,255,255,1) 0 4px, rgba(255,248,220,.92) 5px 17px, rgba(255,255,255,0) 27px),
-      linear-gradient(90deg, rgba(255,245,220,.88) 0%, rgba(255,235,195,.48) 24%, rgba(255,230,186,.18) 54%, rgba(255,255,255,0) 100%);
+      radial-gradient(circle at 1% 50%, rgba(255,255,255,1) 0 4px, rgba(255,248,220,.96) 5px 18px, rgba(255,255,255,0) 29px),
+      linear-gradient(90deg, rgba(255,245,220,.92) 0%, rgba(255,235,195,.54) 23%, rgba(255,230,186,.22) 57%, rgba(255,255,255,0) 100%);
   }
   .camera-flare{
-    left:132px;
-    top:135px;
-    width:38px;
-    height:38px;
+    left:84px;
+    top:226px;
+    width:42px;
+    height:42px;
     z-index:13;
     filter:blur(7px);
   }
