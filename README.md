@@ -1,27 +1,16 @@
-# Lowxxy Discover V11 — Overlap Camera Hero
+# Lowxxy V11.12 – Camera Overlap + Taped Photo
 
-This package updates the site so:
-- the film camera is black and white
-- the camera crosses into the CTA button area slightly
-- the bottom lookbook photos use a taller ratio so more of each photo is visible
+Drop these files into your `lowxxy-discover` GitHub folder and replace the existing files.
 
-## Replace these files in your GitHub repo root
+Included:
 - `index.html`
 - `styles.css`
-- `script.js`
-- `vintage-camera.png`
-- `lowxxy-wordmark.png` (only if you do not already have it in the repo root)
+- `lowxxy-wordmark.png` (if found)
+- `vintage-camera.png` (if found)
 
-## Image files used by this version
-Keep these in the repo root:
-- `popart1.jpeg`
-- `royalscript1.jpeg`
-- `chainmail2.jpeg`
-- `groundedgains1.jpeg`
-- `hang2.jpeg`
-- `royalscript2.jpeg`
-- `chainmail1.jpeg`
-
-## Deploy
-After upload, wait a minute and refresh:
-https://lowxxy.github.io/lowxxy-discover/
+Main changes:
+- camera now overlaps the button layer more like the concept
+- camera stays in the same general area
+- right-side image changed into a more obvious taped editorial photo
+- top section tightened so the elements feel closer together
+- mobile styling keeps the same direction
