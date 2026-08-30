@@ -1,6 +1,5 @@
-# Lowxxy Discover V6
+# Lowxxy Discover V7
 
-Same V5 wordmark placement, but the wordmark images are constrained by HEIGHT to match the original text sizing and prevent the logo image from expanding the layout.
+Keeps the approved new Lowxxy wordmark, leaves all button text unchanged, and restores the main hero wordmark to the same visual footprint as the original LOWXXY title.
 
-Buttons remain normal text.
-Keep your existing Google verification HTML file in the repo.
+Keep your Google verification HTML file in the repository when replacing the site files.

@@ -478,3 +478,17 @@ footer {
   .final-brand-eyebrow img,
   .footer-brand img { height: 9px !important; }
 }
+
+/* V7: match the approved wordmark to the original LOWXXY title footprint */
+.hero-wordmark img {
+  width: min(430px, 100%) !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
+
+@media (max-width: 760px) {
+  .hero-wordmark img {
+    width: min(86vw, 390px) !important;
+    height: auto !important;
+  }
+}
