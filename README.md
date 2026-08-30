@@ -1,13 +1,12 @@
-LOWXXY V11.20 — Phone Camera/Photo Match
+LOWXXY V11.21 — Phone Camera Left + Smaller
 
-This pass keeps the mobile hero non-stacked and rebalances the two side visuals so the camera and taped photo feel closer in size, more like the desktop version.
+This version keeps the mobile hero non-stacked, but moves the camera farther left and scales it down so it better matches the taped photo like the desktop layout.
 
-What changed:
-- phone hero stays in one row instead of stacking
-- camera scaled down on mobile
-- taped photo kept prominent on mobile
-- camera and photo feel more balanced like desktop
-- projection beam/glow adjusted to match the new sizing
-- film-tape lookbook section stays in place
+Changes:
+- camera smaller on phone
+- camera pushed farther left on phone
+- mobile hero columns rebalanced to feel closer to desktop
+- projection beam and glow repositioned to match
+- taped photo stays prominent on the right
 
-Drop these files into your GitHub project and replace the current versions.
+Replace your current files with these.
