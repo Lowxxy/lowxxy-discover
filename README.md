@@ -1,5 +1,18 @@
-# Lowxxy Discover V7
+# Lowxxy Discover V8
 
-Keeps the approved new Lowxxy wordmark, leaves all button text unchanged, and restores the main hero wordmark to the same visual footprint as the original LOWXXY title.
+Vintage fashion / film lookbook version.
 
-Keep your Google verification HTML file in the repository when replacing the site files.
+## Upload to GitHub
+Upload everything in this folder to the root of `lowxxy-discover`.
+
+Keep the existing Google verification HTML file in the repository.
+
+GitHub Pages stays set to `main` + `/(root)`.
+
+## Included
+- 10 user-supplied Lowxxy product photos
+- 1930s-style twin-lens reflex film camera SVG
+- Film-strip / contact-sheet layout
+- Lowxxy wordmark
+- Shopify, Instagram, and AR links
+- SEO metadata, robots.txt, sitemap.xml

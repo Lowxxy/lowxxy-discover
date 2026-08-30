@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620" role="img" aria-labelledby="title desc">
+<title id="title">1930s-style twin-lens reflex film camera</title>
+<desc id="desc">Decorative vintage twin-lens reflex camera illustration inspired by cameras of the 1930s.</desc>
+<g fill="none" stroke="currentColor" stroke-width="10" stroke-linejoin="round" stroke-linecap="round">
+  <path d="M150 70h220l38 55v410l-44 35H156l-44-35V125z"/>
+  <path d="M185 34h150l20 36H165z"/>
+  <rect x="165" y="125" width="190" height="155" rx="18"/>
+  <circle cx="260" cy="202" r="58"/>
+  <circle cx="260" cy="202" r="24"/>
+  <rect x="165" y="315" width="190" height="155" rx="18"/>
+  <circle cx="260" cy="392" r="58"/>
+  <circle cx="260" cy="392" r="24"/>
+  <path d="M112 150H72v110h40M408 150h40v110h-40"/>
+  <path d="M145 520h230M175 570v24M345 570v24"/>
+  <path d="M196 94h128M186 500h148"/>
+</g>
+</svg>
