@@ -1,14 +1,11 @@
-Lowxxy V11.23 — Mobile Centering + Camera Light Alignment Fix
+LOWXXY V11.24 — Minimal Phone Fix on V11.22 Base
 
-Replace these files in your GitHub project root/folder:
-- index.html
-- styles.css
-- lowxxy-wordmark.png
-- vintage-camera.png
+This version intentionally rolls back to V11.22 and changes only the requested mobile details.
 
-What changed:
-- Mobile hero content is visually centered better.
-- Camera is pushed farther left and reduced slightly on phones.
-- Projector light/beam is aligned better with the camera lens on phones.
-- Right taped photo stays balanced with the camera.
-- "Made to stand out" film reel cards are smaller on phones.
+Changed only on phone:
+- slight visual recentering of the middle content
+- tiny right-photo framing adjustment
+- projector light beam realigned to the camera lens
+- smaller Made to stand out reel preserved
+
+Desktop and the rest of the layout are left as-is.
