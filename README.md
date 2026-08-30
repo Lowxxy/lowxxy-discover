@@ -1,25 +1,15 @@
-# Lowxxy V11.15 — Projected Character / Exact Drop-In
+# Lowxxy V11.16 — Mobile Cinematic Hero + Swipe Lookbook
 
-This version is the drop-in build that matches the concept direction more closely:
+This is a full drop-in replacement based on the approved V11.15 desktop checkpoint.
 
-- projected light from the vintage camera reaches the taped photo
-- right-side taped photo uses the character-back shirt image
-- taped photo is larger, angled, and visually centered in the hero
-- bottom center lookbook image is swapped to the former top photo
-- light passes over the logo area instead of feeling boxed in
+Desktop stays in the V11.15 projected-character layout.
 
-## Drop-in instructions
-1. Open your `lowxxy-discover` GitHub repo.
-2. Replace the root `index.html` with this `index.html`.
-3. Replace the root `styles.css` with this `styles.css`.
-4. Upload and replace the included image files in the repo root:
-   - `lowxxy-wordmark.png`
-   - `vintage-camera.png`
-   - `popart1.jpeg`
-   - `royalscript1.jpeg`
-   - `chainmail1.jpeg`
-   - `chainmail2.jpeg`
-   - `groundedgains1.jpeg`
-   - `hang2.jpeg`
+Phone changes:
+- keeps the same hero composition instead of stacking it vertically
+- vintage camera stays on the left
+- LOWXXY title + three links stay in the center
+- projected taped character photo stays on the right
+- projector beam still runs through the center toward the photo
+- bottom lookbook becomes a horizontal swipe slider with scroll snapping
 
-If your repo already has these same filenames in the root, just overwrite them.
+Drop the contents into the root of `lowxxy-discover` and overwrite matching files.
