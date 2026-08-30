@@ -1,7 +1,5 @@
-# Lowxxy Discover - Official Wordmark Version
+# Lowxxy Discover V5 — Wordmark Branding
 
-This keeps the original V2 site design and replaces visible LOWXXY text branding with the supplied white Lowxxy wordmark image.
+This version keeps the original V2 design and swaps the standalone Lowxxy branding for the approved wordmark image. Button labels remain normal text exactly as requested.
 
-Upload all files in this folder to the root of the existing `lowxxy-discover` repository.
-
-Important: keep the existing Google Search Console verification `.html` file in the repository.
+Upload/replace the files in the root of the `lowxxy-discover` repo. Keep your Google verification HTML file in place.
