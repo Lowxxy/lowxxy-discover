@@ -1,16 +1,11 @@
-# Lowxxy Discover V3
+# Lowxxy Discover
 
-Full replacement discovery hub using the supplied official Lowxxy crown + wordmark artwork.
+Drop-in discovery hub for Lowxxy.
 
-## Upload
-Upload these files/folders to the root of the existing `lowxxy-discover` repository:
-- `index.html`
-- `styles.css`
-- `script.js`
-- `robots.txt`
-- `sitemap.xml`
-- `assets/` (entire folder)
+## Live links
+- Store: https://lowxxy.myshopify.com
+- Instagram: https://www.instagram.com/lowxxy.brand
+- AR: https://lowxxy.github.io/Lowxxy-AR/
 
-Keep the Google Search Console verification `.html` file already in the repository. Do not delete it.
-
-GitHub Pages remains configured as `main` + `/(root)`.
+## Deploy
+Upload all files to the root of the `lowxxy-discover` repository and deploy GitHub Pages from `main` / `(root)`.
