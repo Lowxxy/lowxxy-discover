@@ -391,3 +391,22 @@ footer {
 }
 
 .micro-flicker { filter: brightness(1.12) contrast(1.03); }
+
+
+/* LOWXXY custom crossed-X wordmark treatment */
+.cross-x {
+  position: relative;
+  display: inline-block;
+}
+.cross-x::after {
+  content: "";
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  top: 50%;
+  height: 0.075em;
+  background: currentColor;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  pointer-events: none;
+}
