@@ -865,3 +865,193 @@ footer span{font-size:10px;letter-spacing:.25em;color:#817e76}
     filter:saturate(.84) contrast(1.05) brightness(1.05);
   }
 }
+
+
+/* V11.18 PHONE RATIO HERO — keep the desktop composition but fit the phone viewport better */
+@media (max-width:700px){
+  .topbar{
+    height:46px;
+    padding:0 10px;
+  }
+  .brand img{width:74px;}
+  .motto{font-size:5.4px; letter-spacing:.18em;}
+
+  .hero-editorial{
+    min-height:372px;
+    grid-template-columns:34% 40% 26%;
+    align-items:center;
+    padding:8px 8px 12px;
+  }
+
+  .camera-side{
+    width:132%;
+    height:322px;
+    margin:0 -32% 0 0;
+  }
+  .camera-side img{
+    height:334px !important;
+    transform:translate(-48px,14px) scale(1);
+    filter:grayscale(1) saturate(0) contrast(1.12) brightness(.99);
+  }
+  .scribble{
+    top:44px;
+    left:-4px;
+    font-size:9.5px;
+    opacity:.62;
+    line-height:1.02;
+  }
+
+  .hero-center{
+    padding:0 4px 0 0;
+    align-self:center;
+  }
+  .kicker{
+    font-size:6px;
+    letter-spacing:.20em;
+    margin:0 0 6px;
+  }
+  .hero-wordmark{
+    max-width:160px;
+    margin:0 0 8px;
+    filter:drop-shadow(0 0 12px rgba(255,241,208,.18));
+  }
+  .hero-sub{
+    font-size:8.1px;
+    line-height:1.28;
+    max-width:155px;
+    margin:0 0 8px;
+  }
+  .hero-links{gap:5px;}
+  .hero-links a{
+    min-height:34px;
+    grid-template-columns:34px minmax(0,1fr) 11px;
+    padding:0 7px;
+    background:rgba(0,0,0,.28);
+  }
+  .hero-links span{
+    font-size:4.8px;
+    letter-spacing:.10em;
+  }
+  .hero-links strong{
+    font-size:7.3px;
+    letter-spacing:.05em;
+  }
+  .hero-links b{font-size:11px;}
+  .discover-link{
+    margin-top:8px;
+    font-size:5.2px;
+    gap:5px;
+  }
+  .discover-link i{width:22px;}
+
+  .hero-right-media{
+    height:322px;
+    align-items:center;
+    justify-content:flex-start;
+    padding-top:6px;
+  }
+  .hero-right-media::before{
+    width:156px;
+    height:224px;
+    left:-45px;
+    top:66px;
+    transform:rotate(7deg);
+    filter:blur(7px);
+    opacity:.95;
+    background:
+      radial-gradient(circle at 24% 50%, rgba(255,246,220,.48) 0%, rgba(255,238,200,.18) 24%, rgba(255,255,255,0) 64%),
+      radial-gradient(circle at 56% 52%, rgba(255,247,224,.14) 0%, rgba(255,255,255,0) 72%);
+  }
+  .editorial-photo-single{
+    width:112px;
+    margin:10px 0 0 -1px;
+    padding:6px 6px 12px;
+    transform:rotate(7deg);
+    box-shadow:0 12px 26px rgba(0,0,0,.7), 0 0 26px rgba(255,231,185,.05);
+  }
+  .editorial-photo-single:before{
+    inset:-4px 8px 4px -4px;
+  }
+  .editorial-photo-single:after{
+    right:7px;
+    bottom:4px;
+    font-size:3.8px;
+    letter-spacing:.14em;
+  }
+  .editorial-photo-single img{object-position:center 20%;}
+  .tape-main{
+    width:48px;
+    height:9px;
+    top:-5px;
+    left:31px;
+  }
+  .tape-shadow{
+    width:62px;
+    height:8px;
+    top:-2px;
+    left:36px;
+  }
+
+  .camera-beam{
+    left:88px;
+    top:142px;
+    width:238px;
+    height:80px;
+    opacity:.88;
+    filter:blur(.9px);
+    background:
+      radial-gradient(circle at 3% 50%, rgba(255,255,255,1) 0 6px, rgba(255,248,220,.88) 7px 23px, rgba(255,255,255,0) 34px),
+      linear-gradient(90deg, rgba(255,243,214,.82) 0%, rgba(255,232,191,.44) 24%, rgba(255,230,186,.16) 54%, rgba(255,255,255,0) 100%);
+    clip-path:polygon(0 43%,0 57%,100% 86%,100% 14%);
+  }
+  .camera-flare{
+    left:132px;
+    top:129px;
+    width:64px;
+    height:64px;
+    filter:blur(8px);
+  }
+  .photo-cast{
+    right:-2px;
+    top:68px;
+    width:128px;
+    height:210px;
+    transform:rotate(8deg);
+    filter:blur(7px);
+    opacity:.85;
+  }
+
+  .lookbook-grid{
+    padding:14px 0 22px;
+  }
+  .lookbook-grid::before,
+  .lookbook-grid::after{
+    height:9px;
+    background:repeating-linear-gradient(90deg,#0a0a0a 0 12px,#8f7341 12px 18px,#0a0a0a 18px 30px);
+  }
+  .lookbook-topline{
+    padding:14px 12px 12px;
+    margin:0 0 8px;
+    gap:10px;
+    align-items:flex-end;
+  }
+  .lookbook-topline span{
+    font-size:6.5px;
+    letter-spacing:.20em;
+  }
+  .lookbook-topline h2{
+    font-size:18px;
+    line-height:1;
+  }
+  .lookbook-film-row{
+    gap:8px;
+    padding:12px 12px 14px;
+    scroll-padding-left:12px;
+    scroll-padding-right:12px;
+  }
+  .lookbook-film-row figure{
+    flex:0 0 78vw;
+    width:78vw;
+    max-width:318px;
+  }
+}
