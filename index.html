@@ -25,8 +25,7 @@
   </script>
 
   <style>
-    /* V11.26 - phone hero matched much closer to desktop framing/layout */
-
+    /* V11.26 - phone hero composed to mirror desktop framing */
     @media (max-width: 700px) {
       .topbar {
         height: 54px !important;
@@ -44,62 +43,67 @@
       }
 
       .hero-editorial {
-        min-height: 370px !important;
-        grid-template-columns: 25% 49% 26% !important;
-        align-items: start !important;
-        justify-content: center !important;
-        padding: 12px 12px 8px !important;
-        gap: 6px !important;
+        display: block !important;
+        position: relative !important;
+        min-height: 314px !important;
+        height: 314px !important;
+        padding: 0 0 8px !important;
         overflow: hidden !important;
       }
 
       .camera-side {
-        width: 96px !important;
-        height: 208px !important;
+        position: absolute !important;
+        left: -6px !important;
+        top: 10px !important;
+        width: 126px !important;
+        height: 232px !important;
         margin: 0 !important;
-        justify-self: start !important;
-        align-self: start !important;
+        overflow: hidden !important;
         z-index: 14 !important;
+        pointer-events: none !important;
       }
 
       .camera-side img {
-        height: 208px !important;
+        height: 248px !important;
         width: auto !important;
         max-width: none !important;
-        transform: translate(-36px, 34px) !important;
+        transform: translate(-52px, -1px) !important;
       }
 
       .scribble {
-        top: 42px !important;
-        left: -8px !important;
-        font-size: 7px !important;
-        opacity: .56 !important;
+        top: 34px !important;
+        left: 2px !important;
+        font-size: 6px !important;
+        line-height: 1.15 !important;
+        opacity: .48 !important;
       }
 
       .hero-center {
+        position: absolute !important;
+        left: 96px !important;
+        top: 40px !important;
+        width: 170px !important;
         max-width: none !important;
-        justify-self: center !important;
-        align-self: start !important;
+        padding: 0 !important;
         z-index: 18 !important;
-        padding: 42px 0 0 0 !important;
-        transform: translateX(-2px) !important;
       }
 
       .kicker {
-        font-size: 6.5px !important;
+        font-size: 6px !important;
         margin: 0 0 6px !important;
       }
 
       .hero-wordmark {
-        max-width: 168px !important;
+        width: 166px !important;
+        max-width: none !important;
         margin: 0 0 8px !important;
       }
 
       .hero-sub {
-        max-width: 184px !important;
-        font-size: 8.8px !important;
+        max-width: 170px !important;
+        font-size: 8.3px !important;
         line-height: 1.28 !important;
-        margin: 0 0 11px !important;
+        margin: 0 0 10px !important;
       }
 
       .hero-sub br {
@@ -111,62 +115,65 @@
       }
 
       .hero-links a {
-        min-height: 36px !important;
-        grid-template-columns: 42px minmax(0,1fr) 12px !important;
+        min-height: 33px !important;
+        grid-template-columns: 34px minmax(0,1fr) 12px !important;
         padding: 0 8px !important;
-        background: rgba(0,0,0,.30) !important;
+        background: rgba(0,0,0,.28) !important;
       }
 
       .hero-links span {
-        font-size: 4.9px !important;
+        font-size: 4.8px !important;
         letter-spacing: .14em !important;
       }
 
       .hero-links strong {
-        font-size: 7.6px !important;
+        font-size: 7.2px !important;
         letter-spacing: .02em !important;
         white-space: nowrap !important;
       }
 
       .hero-links b {
-        font-size: 13px !important;
+        font-size: 12px !important;
       }
 
       .discover-link {
         margin-top: 9px !important;
-        padding-left: 10px !important;
+        padding-left: 0 !important;
         justify-content: flex-start !important;
         gap: 8px !important;
-        font-size: 7px !important;
+        font-size: 6.7px !important;
       }
 
       .discover-link i {
-        width: 28px !important;
+        width: 26px !important;
       }
 
       .hero-right-media {
-        height: 190px !important;
-        min-height: 190px !important;
-        align-items: flex-start !important;
-        justify-content: flex-start !important;
-        padding: 38px 0 0 0 !important;
-        transform: translateX(-2px) !important;
+        position: absolute !important;
+        right: 7px !important;
+        top: 36px !important;
+        width: 104px !important;
+        height: 156px !important;
+        min-height: 0 !important;
+        padding: 0 !important;
+        display: block !important;
         z-index: 15 !important;
       }
 
       .hero-right-media::before {
-        width: 104px !important;
+        width: 106px !important;
         height: 152px !important;
-        left: -8px !important;
-        top: 50px !important;
-        transform: rotate(6deg) !important;
+        left: -7px !important;
+        top: 6px !important;
+        transform: rotate(5deg) !important;
         opacity: .84 !important;
       }
 
       .editorial-photo-single {
-        width: 102px !important;
+        width: 100px !important;
         margin: 0 !important;
-        transform: rotate(6deg) !important;
+        padding: 5px 5px 11px !important;
+        transform: rotate(5deg) !important;
       }
 
       .editorial-photo-single img {
@@ -174,14 +181,14 @@
       }
 
       .tape-main {
-        left: 30px !important;
+        left: 28px !important;
         top: -5px !important;
         width: 40px !important;
         height: 8px !important;
       }
 
       .tape-shadow {
-        left: 34px !important;
+        left: 32px !important;
         top: -2px !important;
         width: 46px !important;
         height: 7px !important;
@@ -189,33 +196,32 @@
 
       .camera-beam {
         position: absolute !important;
-        left: 78px !important;
-        top: 160px !important;
-        width: 246px !important;
-        height: 38px !important;
-        opacity: .9 !important;
+        left: 74px !important;
+        top: 116px !important;
+        width: 206px !important;
+        height: 40px !important;
+        opacity: .90 !important;
         background: linear-gradient(
           90deg,
-          rgba(230,220,195,.9) 0%,
-          rgba(210,193,150,.55) 22%,
-          rgba(196,170,110,.22) 62%,
+          rgba(230,220,195,.92) 0%,
+          rgba(210,193,150,.56) 22%,
+          rgba(196,170,110,.24) 63%,
           rgba(196,170,110,0) 100%
         ) !important;
         clip-path: polygon(0 44%, 0 56%, 100% 72%, 100% 28%) !important;
-        filter: blur(.2px) !important;
         z-index: 7 !important;
         pointer-events: none !important;
       }
 
       .camera-flare {
         position: absolute !important;
-        left: 72px !important;
-        top: 148px !important;
-        width: 32px !important;
-        height: 32px !important;
+        left: 66px !important;
+        top: 107px !important;
+        width: 26px !important;
+        height: 26px !important;
         border-radius: 50% !important;
-        background: radial-gradient(circle, rgba(255,243,213,.9) 0%, rgba(255,232,173,.45) 35%, rgba(255,232,173,0) 75%) !important;
-        opacity: .85 !important;
+        background: radial-gradient(circle, rgba(255,243,213,.9) 0%, rgba(255,232,173,.42) 36%, rgba(255,232,173,0) 75%) !important;
+        opacity: .84 !important;
         z-index: 8 !important;
         pointer-events: none !important;
       }
@@ -223,49 +229,50 @@
       .photo-cast {
         position: absolute !important;
         right: 8px !important;
-        top: 58px !important;
-        width: 102px !important;
-        height: 148px !important;
+        top: 46px !important;
+        width: 104px !important;
+        height: 146px !important;
         background: radial-gradient(circle at 45% 45%, rgba(230,208,155,.18) 0%, rgba(230,208,155,.08) 35%, rgba(230,208,155,0) 72%) !important;
-        opacity: .72 !important;
+        opacity: .70 !important;
         z-index: 6 !important;
         pointer-events: none !important;
       }
 
       .lookbook-grid {
         border-top: 0 !important;
-        padding: 4px 10px 24px !important;
+        padding: 2px 8px 24px !important;
         margin-top: 0 !important;
       }
 
       .lookbook-topline {
         display: flex !important;
         justify-content: space-between !important;
-        align-items: end !important;
-        gap: 10px !important;
-        padding: 8px 2px 6px !important;
-        margin-bottom: 6px !important;
+        align-items: flex-end !important;
+        gap: 8px !important;
+        padding: 4px 2px 7px !important;
+        margin-bottom: 0 !important;
       }
 
       .lookbook-topline span {
-        font-size: 9px !important;
+        font-size: 8.5px !important;
       }
 
       .lookbook-topline h2 {
-        font-size: 16px !important;
+        font-size: 15px !important;
         line-height: 1 !important;
         margin: 0 !important;
         text-align: right !important;
       }
 
       .lookbook-film-row {
-        grid-template-columns: repeat(2,minmax(0,1fr)) !important;
+        padding: 14px 6px 10px !important;
         gap: 6px !important;
-        padding: 14px 8px 12px !important;
       }
 
       .lookbook-film-row figure {
-        aspect-ratio: 4 / 5 !important;
+        flex: 0 0 62vw !important;
+        width: 62vw !important;
+        max-width: 228px !important;
       }
     }
   </style>
