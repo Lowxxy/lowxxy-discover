@@ -66,7 +66,7 @@
       display:flex;
       align-items:center;
       justify-content:space-between;
-      padding:0 28px;
+      padding:0 20px;
       border-bottom:1px solid var(--line);
       position:relative;
       z-index:50;
@@ -95,10 +95,17 @@
       border-bottom:1px solid rgba(180,139,61,.25);
     }
 
+    .hero-stage{
+      position:relative;
+      max-width:1600px;
+      height:620px;
+      margin:0 auto;
+    }
+
     .camera-side{
       position:absolute;
-      left:-10px;
-      top:36px;
+      left:-30px;
+      top:28px;
       width:360px;
       z-index:11;
       pointer-events:none;
@@ -108,13 +115,13 @@
       width:100%;
       height:auto;
       object-fit:contain;
-      filter:drop-shadow(0 10px 20px rgba(0,0,0,.4));
+      filter:grayscale(1) drop-shadow(0 10px 20px rgba(0,0,0,.4));
     }
 
     .scribble{
       position:absolute;
-      top:46px;
-      left:34px;
+      top:54px;
+      left:20px;
       color:#c7b89a;
       opacity:.35;
       font-style:italic;
@@ -125,32 +132,32 @@
 
     .camera-flare{
       position:absolute;
-      left:284px;
-      top:255px;
-      width:70px;
-      height:70px;
+      left:330px;
+      top:248px;
+      width:78px;
+      height:78px;
       border-radius:50%;
       background:radial-gradient(circle, rgba(255,244,214,.94) 0%, rgba(255,227,171,.35) 40%, rgba(255,227,171,0) 74%);
-      opacity:.9;
+      opacity:.85;
       z-index:8;
       pointer-events:none;
     }
 
     .camera-beam{
       position:absolute;
-      left:314px;
-      top:268px;
-      width:470px;
-      height:82px;
+      left:350px;
+      top:266px;
+      width:430px;
+      height:66px;
       background:linear-gradient(
         90deg,
-        rgba(233,223,198,.95) 0%,
-        rgba(223,206,168,.55) 18%,
-        rgba(199,170,111,.22) 58%,
+        rgba(233,223,198,.92) 0%,
+        rgba(223,206,168,.52) 18%,
+        rgba(199,170,111,.18) 56%,
         rgba(199,170,111,0) 100%
       );
-      clip-path:polygon(0 42%, 0 58%, 100% 78%, 100% 22%);
-      opacity:.86;
+      clip-path:polygon(0 42%, 0 58%, 100% 72%, 100% 28%);
+      opacity:.84;
       z-index:7;
       pointer-events:none;
       filter:blur(.2px);
@@ -158,20 +165,20 @@
 
     .photo-cast{
       position:absolute;
-      right:135px;
-      top:130px;
+      right:160px;
+      top:126px;
       width:360px;
       height:320px;
-      background:radial-gradient(circle at 30% 42%, rgba(232,208,155,.24) 0%, rgba(232,208,155,.09) 38%, rgba(232,208,155,0) 76%);
+      background:radial-gradient(circle at 34% 42%, rgba(232,208,155,.20) 0%, rgba(232,208,155,.08) 38%, rgba(232,208,155,0) 76%);
       z-index:6;
       pointer-events:none;
     }
 
     .hero-center{
       position:absolute;
-      left:390px;
-      top:92px;
-      width:420px;
+      left:420px;
+      top:88px;
+      width:430px;
       z-index:22;
     }
 
@@ -267,9 +274,9 @@
 
     .hero-right-media{
       position:absolute;
-      right:78px;
-      top:118px;
-      width:290px;
+      right:110px;
+      top:108px;
+      width:295px;
       z-index:12;
       pointer-events:none;
     }
@@ -277,10 +284,10 @@
     .hero-right-media::before{
       content:"";
       position:absolute;
-      left:-14px;
-      top:10px;
-      width:294px;
-      height:418px;
+      left:-18px;
+      top:12px;
+      width:304px;
+      height:428px;
       border:1px solid rgba(255,255,255,.14);
       transform:rotate(5deg);
       opacity:.75;
@@ -289,7 +296,7 @@
     .editorial-photo-single{
       position:relative;
       margin:0;
-      width:280px;
+      width:285px;
       padding:10px 10px 18px;
       background:rgba(8,8,8,.84);
       border:1px solid rgba(255,255,255,.12);
@@ -325,7 +332,7 @@
     }
 
     .tape-main{
-      left:84px;
+      left:88px;
       top:-8px;
       width:98px;
       height:16px;
@@ -333,7 +340,7 @@
     }
 
     .tape-shadow{
-      left:90px;
+      left:94px;
       top:-4px;
       width:108px;
       height:14px;
@@ -343,7 +350,9 @@
     }
 
     .lookbook-grid{
-      padding:24px 24px 40px;
+      max-width:1700px;
+      margin:0 auto;
+      padding:24px 20px 40px;
       overflow:hidden;
     }
 
@@ -352,7 +361,7 @@
       justify-content:space-between;
       align-items:flex-end;
       gap:20px;
-      padding:0 4px 12px;
+      padding:0 0 12px;
     }
 
     .lookbook-topline span{
@@ -374,13 +383,13 @@
       white-space:nowrap;
     }
 
+    /* FILMSTRIP */
     .lookbook-film-row{
-      position:relative;
       display:flex;
       gap:0;
       overflow-x:auto;
       overflow-y:hidden;
-      padding:24px 0 10px;
+      padding:0;
       scrollbar-width:none;
       -ms-overflow-style:none;
       scroll-snap-type:x proximity;
@@ -390,29 +399,38 @@
       display:none;
     }
 
-    .lookbook-film-row::before{
+    .lookbook-film-row figure{
+      position:relative;
+      flex:0 0 33.3333%;
+      min-width:33.3333%;
+      margin:0;
+      padding:18px 4px;
+      scroll-snap-align:start;
+    }
+
+    .lookbook-film-row figure::before,
+    .lookbook-film-row figure::after{
       content:"";
       position:absolute;
-      left:-24px;
-      right:-24px;
-      top:0;
+      left:0;
+      right:0;
       height:12px;
+      pointer-events:none;
       background:
         repeating-linear-gradient(
           90deg,
-          transparent 0 38px,
-          var(--gold) 38px 46px
+          transparent 0 24px,
+          var(--gold) 24px 32px
         );
-      opacity:.95;
-      pointer-events:none;
+      opacity:.96;
     }
 
-    .lookbook-film-row figure{
-      flex:0 0 31%;
-      min-width:31%;
-      margin:0;
-      padding:0 3px;
-      scroll-snap-align:start;
+    .lookbook-film-row figure::before{
+      top:0;
+    }
+
+    .lookbook-film-row figure::after{
+      bottom:0;
     }
 
     .lookbook-film-row img{
@@ -420,11 +438,14 @@
       aspect-ratio:3 / 4;
       object-fit:cover;
       background:#000;
-      border:1px solid rgba(255,255,255,.08);
+      border-left:1px solid rgba(255,255,255,.08);
+      border-right:1px solid rgba(255,255,255,.08);
     }
 
     .discovery-copy{
-      padding:44px 24px;
+      max-width:1700px;
+      margin:0 auto;
+      padding:44px 20px;
       border-top:1px solid rgba(180,139,61,.18);
       display:grid;
       grid-template-columns:1fr 1fr;
@@ -453,10 +474,12 @@
     }
 
     .final-links{
+      max-width:1700px;
+      margin:0 auto;
       display:grid;
       grid-template-columns:repeat(3, 1fr);
       gap:12px;
-      padding:0 24px 44px;
+      padding:0 20px 44px;
     }
 
     .final-links a{
@@ -479,7 +502,7 @@
 
     footer{
       border-top:1px solid rgba(180,139,61,.28);
-      padding:22px 24px 28px;
+      padding:22px 20px 28px;
       display:flex;
       align-items:center;
       justify-content:space-between;
@@ -510,86 +533,69 @@
       }
 
       .hero-editorial{
-        display:block !important;
-        position:relative !important;
-        min-height:345px !important;
-        height:345px !important;
-        padding:0 !important;
-        overflow:hidden !important;
+        min-height:370px !important;
+        height:370px !important;
       }
 
-      /* CAMERA - moved slightly right */
+      .hero-stage{
+        height:370px !important;
+        max-width:none !important;
+      }
+
+      /* camera stays black/white and keeps legs visible */
       .camera-side{
-        position:absolute !important;
-        left:2px !important;
-        top:56px !important;
-        width:128px !important;
-        height:214px !important;
-        overflow:hidden !important;
-        margin:0 !important;
+        left:-8px !important;
+        top:54px !important;
+        width:150px !important;
         z-index:10 !important;
       }
 
       .camera-side img{
         width:auto !important;
-        height:238px !important;
+        height:250px !important;
         max-width:none !important;
-        transform:translate(-34px, 0) !important;
+        transform:translate(-24px, 0) !important;
+        filter:grayscale(1) !important;
       }
 
       .scribble{
-        top:18px !important;
-        left:0px !important;
-        font-size:5.8px !important;
+        top:22px !important;
+        left:2px !important;
+        font-size:6px !important;
         line-height:1.08 !important;
         opacity:.42 !important;
       }
 
-      /* LIGHT - more like desktop reference */
       .camera-flare{
-        left:102px !important;
-        top:161px !important;
-        width:24px !important;
-        height:24px !important;
-        background:radial-gradient(circle, rgba(255,244,214,.92) 0%, rgba(255,227,171,.36) 38%, rgba(255,227,171,0) 76%) !important;
+        left:116px !important;
+        top:165px !important;
+        width:26px !important;
+        height:26px !important;
         opacity:.82 !important;
       }
 
       .camera-beam{
-        left:112px !important;
-        top:167px !important;
-        width:208px !important;
-        height:26px !important;
-        background:linear-gradient(
-          90deg,
-          rgba(233,223,198,.92) 0%,
-          rgba(214,195,151,.48) 22%,
-          rgba(194,167,108,.18) 62%,
-          rgba(194,167,108,0) 100%
-        ) !important;
+        left:126px !important;
+        top:171px !important;
+        width:218px !important;
+        height:28px !important;
         clip-path:polygon(0 44%, 0 56%, 100% 68%, 100% 32%) !important;
         opacity:.88 !important;
-        z-index:8 !important;
       }
 
       .photo-cast{
-        right:6px !important;
-        top:114px !important;
-        width:128px !important;
-        height:120px !important;
-        background:radial-gradient(circle at 34% 42%, rgba(232,208,155,.18) 0%, rgba(232,208,155,.08) 36%, rgba(232,208,155,0) 74%) !important;
-        opacity:.7 !important;
+        right:8px !important;
+        top:120px !important;
+        width:140px !important;
+        height:130px !important;
+        opacity:.72 !important;
       }
 
-      /* CENTER BLOCK */
       .hero-center{
-        position:absolute !important;
-        left:106px !important;
+        left:108px !important;
         top:66px !important;
         width:176px !important;
-        max-width:none !important;
         padding:0 !important;
-        z-index:22 !important;
       }
 
       .kicker{
@@ -651,29 +657,23 @@
         width:34px !important;
       }
 
-      /* RIGHT PHOTO - moved more right */
       .hero-right-media{
-        position:absolute !important;
-        right:2px !important;
-        top:96px !important;
-        width:132px !important;
-        height:188px !important;
-        z-index:12 !important;
+        right:4px !important;
+        top:118px !important;
+        width:138px !important;
+        height:194px !important;
       }
 
       .hero-right-media::before{
-        width:138px !important;
-        height:188px !important;
-        left:-8px !important;
-        top:7px !important;
-        transform:rotate(5deg) !important;
-        opacity:.78 !important;
+        width:146px !important;
+        height:196px !important;
+        left:-10px !important;
+        top:8px !important;
       }
 
       .editorial-photo-single{
-        width:128px !important;
+        width:134px !important;
         padding:5px 5px 11px !important;
-        transform:rotate(5deg) !important;
         margin:0 !important;
       }
 
@@ -690,82 +690,54 @@
       }
 
       .tape-main{
-        left:41px !important;
+        left:43px !important;
         top:-5px !important;
-        width:44px !important;
+        width:46px !important;
         height:8px !important;
       }
 
       .tape-shadow{
-        left:44px !important;
+        left:46px !important;
         top:-2px !important;
-        width:50px !important;
+        width:52px !important;
         height:7px !important;
       }
 
-      /* LOOKBOOK HEADING */
       .lookbook-grid{
         padding:16px 10px 22px !important;
-        overflow:hidden !important;
       }
 
       .lookbook-topline{
-        display:flex !important;
-        justify-content:space-between !important;
-        align-items:flex-end !important;
         gap:8px !important;
         padding:0 2px 10px !important;
-        margin:0 !important;
       }
 
       .lookbook-topline span{
         font-size:7.2px !important;
         letter-spacing:.15em !important;
-        white-space:nowrap !important;
       }
 
       .lookbook-topline h2{
         font-size:10px !important;
         line-height:1 !important;
-        margin:0 !important;
-        white-space:nowrap !important;
         text-align:right !important;
-      }
-
-      /* FILM TAPE - now continuous */
-      .lookbook-film-row{
-        position:relative !important;
-        padding:20px 0 8px !important;
-        gap:0 !important;
-        overflow-x:auto !important;
-        overflow-y:hidden !important;
-      }
-
-      .lookbook-film-row::before{
-        content:"" !important;
-        position:absolute !important;
-        left:-14px !important;
-        right:-14px !important;
-        top:0 !important;
-        height:12px !important;
-        background:repeating-linear-gradient(
-          90deg,
-          transparent 0 26px,
-          var(--gold) 26px 34px
-        ) !important;
-        opacity:.95 !important;
-        pointer-events:none !important;
       }
 
       .lookbook-film-row figure{
         flex:0 0 40vw !important;
         min-width:40vw !important;
-        max-width:none !important;
-        padding:0 3px !important;
+        padding:14px 3px !important;
       }
 
-      .lookbook-film-row img{
-        aspect-ratio:3 / 4 !important;
+      .lookbook-film-row figure::before,
+      .lookbook-film-row figure::after{
+        height:10px !important;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 14px,
+            var(--gold) 14px 22px
+          ) !important;
       }
 
       .discovery-copy{
@@ -816,41 +788,43 @@
 
   <main id="top">
     <section class="hero-editorial">
-      <div class="camera-side" aria-hidden="true">
-        <img src="vintage-camera.png" alt="">
-        <div class="scribble">stand out.<br>stay humble.</div>
-      </div>
-
-      <div class="camera-flare" aria-hidden="true"></div>
-      <div class="camera-beam" aria-hidden="true"></div>
-      <div class="photo-cast" aria-hidden="true"></div>
-
-      <div class="hero-center">
-        <p class="kicker">NOW BROADCASTING</p>
-        <img class="hero-wordmark" src="lowxxy-wordmark.png" alt="Lowxxy">
-        <p class="hero-sub">Vintage-inspired graphic streetwear, original art,<br>animation and interactive clothing.</p>
-
-        <div class="hero-links">
-          <a href="https://lowxxy.myshopify.com" target="_blank" rel="noopener">
-            <span>SHOP</span><strong>LOWXXY STORE</strong><b>→</b>
-          </a>
-          <a href="https://www.instagram.com/lowxxy.brand" target="_blank" rel="noopener">
-            <span>FOLLOW</span><strong>@LOWXXY.BRAND</strong><b>→</b>
-          </a>
-          <a href="https://lowxxy.github.io/Lowxxy-AR/" target="_blank" rel="noopener">
-            <span>SCAN + WATCH</span><strong>LOWXXY AR</strong><b>→</b>
-          </a>
+      <div class="hero-stage">
+        <div class="camera-side" aria-hidden="true">
+          <img src="vintage-camera.png" alt="">
+          <div class="scribble">stand out.<br>stay humble.</div>
         </div>
 
-        <a class="discover-link" href="#lookbook">EXPLORE LOOKBOOK <i></i></a>
-      </div>
+        <div class="camera-flare" aria-hidden="true"></div>
+        <div class="camera-beam" aria-hidden="true"></div>
+        <div class="photo-cast" aria-hidden="true"></div>
 
-      <div class="hero-right-media">
-        <figure class="editorial-photo-single" aria-label="Lowxxy editorial fashion image">
-          <img src="chainmail2.jpeg" alt="Lowxxy character graphic tee back">
-          <span class="tape tape-main"></span>
-          <span class="tape tape-shadow"></span>
-        </figure>
+        <div class="hero-center">
+          <p class="kicker">NOW BROADCASTING</p>
+          <img class="hero-wordmark" src="lowxxy-wordmark.png" alt="Lowxxy">
+          <p class="hero-sub">Vintage-inspired graphic streetwear, original art,<br>animation and interactive clothing.</p>
+
+          <div class="hero-links">
+            <a href="https://lowxxy.myshopify.com" target="_blank" rel="noopener">
+              <span>SHOP</span><strong>LOWXXY STORE</strong><b>→</b>
+            </a>
+            <a href="https://www.instagram.com/lowxxy.brand" target="_blank" rel="noopener">
+              <span>FOLLOW</span><strong>@LOWXXY.BRAND</strong><b>→</b>
+            </a>
+            <a href="https://lowxxy.github.io/Lowxxy-AR/" target="_blank" rel="noopener">
+              <span>SCAN + WATCH</span><strong>LOWXXY AR</strong><b>→</b>
+            </a>
+          </div>
+
+          <a class="discover-link" href="#lookbook">EXPLORE LOOKBOOK <i></i></a>
+        </div>
+
+        <div class="hero-right-media">
+          <figure class="editorial-photo-single" aria-label="Lowxxy editorial fashion image">
+            <img src="chainmail2.jpeg" alt="Lowxxy character graphic tee back">
+            <span class="tape tape-main"></span>
+            <span class="tape tape-shadow"></span>
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -861,11 +835,11 @@
       </div>
 
       <div class="lookbook-film-row">
-        <figure class="fit-pop"><img src="popart1.jpeg" alt="Lowxxy Humble tee"></figure>
-        <figure class="fit-royal"><img src="royalscript1.jpeg" alt="Lowxxy Royal Script tee"></figure>
-        <figure class="fit-chain"><img src="chainmail1.jpeg" alt="Lowxxy Chainmail tee front"></figure>
-        <figure class="fit-gains"><img src="groundedgains1.jpeg" alt="Lowxxy Grounded Gains tee"></figure>
-        <figure class="fit-hang"><img src="hang2.jpeg" alt="Lowxxy Stand Out Stay Humble tee back"></figure>
+        <figure><img src="popart1.jpeg" alt="Lowxxy Humble tee"></figure>
+        <figure><img src="royalscript1.jpeg" alt="Lowxxy Royal Script tee"></figure>
+        <figure><img src="chainmail1.jpeg" alt="Lowxxy Chainmail tee front"></figure>
+        <figure><img src="groundedgains1.jpeg" alt="Lowxxy Grounded Gains tee"></figure>
+        <figure><img src="hang2.jpeg" alt="Lowxxy Stand Out Stay Humble tee back"></figure>
       </div>
     </section>
 
