@@ -12,6 +12,7 @@
   <meta property="og:description" content="Original graphic tees, vintage-inspired streetwear, artwork, animation and interactive AR clothing.">
   <meta property="og:url" content="https://lowxxy.github.io/lowxxy-discover/">
   <link rel="stylesheet" href="styles.css">
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -20,12 +21,14 @@
     "url":"https://lowxxy.myshopify.com",
     "slogan":"Stand Out. Stay Humble.",
     "description":"Independent vintage-inspired streetwear and graphic apparel brand combining original art, animation and interactive AR experiences.",
-    "sameAs":["https://www.instagram.com/lowxxy.brand","https://lowxxy.github.io/lowxxy-discover/"]
+    "sameAs":[
+      "https://www.instagram.com/lowxxy.brand",
+      "https://lowxxy.github.io/lowxxy-discover/"
+    ]
   }
   </script>
 
   <style>
-    /* V11.28 - mobile hero closer to desktop balance */
     @media (max-width: 700px) {
       .topbar {
         height: 54px !important;
@@ -45,47 +48,49 @@
       .hero-editorial {
         display: block !important;
         position: relative !important;
-        min-height: 322px !important;
-        height: 322px !important;
-        padding: 0 0 10px !important;
+        min-height: 312px !important;
+        height: 312px !important;
+        padding: 0 !important;
         overflow: hidden !important;
       }
 
+      /* LEFT CAMERA */
       .camera-side {
         position: absolute !important;
-        left: -6px !important;
-        top: 10px !important;
-        width: 126px !important;
-        height: 232px !important;
+        left: -8px !important;
+        top: 18px !important;
+        width: 132px !important;
+        height: 236px !important;
         margin: 0 !important;
         overflow: hidden !important;
-        z-index: 14 !important;
+        z-index: 10 !important;
         pointer-events: none !important;
       }
 
       .camera-side img {
-        height: 248px !important;
+        height: 252px !important;
         width: auto !important;
         max-width: none !important;
-        transform: translate(-52px, -1px) !important;
+        transform: translate(-54px, 0px) !important;
       }
 
       .scribble {
         top: 34px !important;
-        left: 2px !important;
+        left: 4px !important;
         font-size: 6px !important;
-        line-height: 1.15 !important;
-        opacity: .48 !important;
+        line-height: 1.12 !important;
+        opacity: .46 !important;
       }
 
+      /* CENTER CONTENT */
       .hero-center {
         position: absolute !important;
-        left: 96px !important;
-        top: 42px !important;
-        width: 168px !important;
+        left: 92px !important;
+        top: 54px !important;
+        width: 166px !important;
         max-width: none !important;
         padding: 0 !important;
-        z-index: 18 !important;
+        z-index: 22 !important;
       }
 
       .kicker {
@@ -101,7 +106,7 @@
 
       .hero-sub {
         max-width: 168px !important;
-        font-size: 8.3px !important;
+        font-size: 8.2px !important;
         line-height: 1.28 !important;
         margin: 0 0 10px !important;
       }
@@ -137,33 +142,33 @@
       }
 
       .discover-link {
-        margin-top: 9px !important;
+        margin-top: 10px !important;
         padding-left: 0 !important;
         justify-content: flex-start !important;
         gap: 8px !important;
-        font-size: 6.7px !important;
+        font-size: 6.5px !important;
       }
 
       .discover-link i {
         width: 26px !important;
       }
 
-      /* Right photo bigger and slightly lower */
+      /* RIGHT HANGING PHOTO - LOWER + BALANCED */
       .hero-right-media {
         position: absolute !important;
-        right: 0 !important;
-        top: 40px !important;
-        width: 140px !important;
-        height: 204px !important;
+        right: -2px !important;
+        top: 78px !important;
+        width: 132px !important;
+        height: 196px !important;
         min-height: 0 !important;
         padding: 0 !important;
         display: block !important;
-        z-index: 15 !important;
+        z-index: 12 !important;
       }
 
       .hero-right-media::before {
-        width: 140px !important;
-        height: 196px !important;
+        width: 138px !important;
+        height: 192px !important;
         left: -10px !important;
         top: 8px !important;
         transform: rotate(5deg) !important;
@@ -171,7 +176,7 @@
       }
 
       .editorial-photo-single {
-        width: 132px !important;
+        width: 126px !important;
         margin: 0 !important;
         padding: 5px 5px 11px !important;
         transform: rotate(5deg) !important;
@@ -195,86 +200,117 @@
         height: 7px !important;
       }
 
-      /* Beam moved upward a bit */
+      /* CAMERA BEAM / LIGHT */
       .camera-beam {
         position: absolute !important;
-        left: 74px !important;
-        top: 104px !important;
-        width: 246px !important;
-        height: 44px !important;
-        opacity: .90 !important;
+        left: 68px !important;
+        top: 122px !important;
+        width: 232px !important;
+        height: 36px !important;
+        opacity: .92 !important;
         background: linear-gradient(
           90deg,
-          rgba(230,220,195,.92) 0%,
-          rgba(210,193,150,.56) 22%,
-          rgba(196,170,110,.24) 63%,
+          rgba(233,223,198,.92) 0%,
+          rgba(212,194,151,.56) 24%,
+          rgba(196,170,110,.24) 64%,
           rgba(196,170,110,0) 100%
         ) !important;
-        clip-path: polygon(0 44%, 0 56%, 100% 72%, 100% 28%) !important;
-        z-index: 7 !important;
+        clip-path: polygon(0 42%, 0 58%, 100% 70%, 100% 30%) !important;
+        z-index: 8 !important;
         pointer-events: none !important;
       }
 
       .camera-flare {
         position: absolute !important;
-        left: 66px !important;
-        top: 95px !important;
+        left: 60px !important;
+        top: 113px !important;
         width: 28px !important;
         height: 28px !important;
         border-radius: 50% !important;
         background: radial-gradient(circle, rgba(255,243,213,.9) 0%, rgba(255,232,173,.42) 36%, rgba(255,232,173,0) 75%) !important;
         opacity: .84 !important;
-        z-index: 8 !important;
+        z-index: 9 !important;
         pointer-events: none !important;
       }
 
       .photo-cast {
         position: absolute !important;
-        right: -2px !important;
-        top: 50px !important;
-        width: 140px !important;
-        height: 182px !important;
-        background: radial-gradient(circle at 45% 45%, rgba(230,208,155,.22) 0%, rgba(230,208,155,.10) 35%, rgba(230,208,155,0) 72%) !important;
-        opacity: .75 !important;
-        z-index: 6 !important;
+        right: -12px !important;
+        top: 100px !important;
+        width: 160px !important;
+        height: 130px !important;
+        background: radial-gradient(circle at 40% 45%, rgba(230,208,155,.23) 0%, rgba(230,208,155,.10) 36%, rgba(230,208,155,0) 76%) !important;
+        opacity: .72 !important;
+        z-index: 7 !important;
         pointer-events: none !important;
       }
 
+      /* LOOKBOOK SECTION */
       .lookbook-grid {
+        position: relative !important;
         border-top: 0 !important;
-        padding: 0 8px 24px !important;
+        padding: 10px 8px 24px !important;
         margin-top: 0 !important;
+        overflow: hidden !important;
       }
 
-      /* Move "Made to stand out." above the tape row */
+      /* hide any existing decorative top strip if your base CSS has one */
+      .lookbook-grid::before {
+        display: none !important;
+      }
+
+      /* title row ABOVE tape row */
       .lookbook-topline {
         display: flex !important;
         justify-content: space-between !important;
         align-items: flex-end !important;
         gap: 8px !important;
-        padding: 0 2px 12px !important;
-        margin-bottom: 4px !important;
+        padding: 0 4px 8px !important;
+        margin: 0 !important;
       }
 
       .lookbook-topline span {
-        font-size: 8.5px !important;
+        font-size: 8.1px !important;
+        letter-spacing: .15em !important;
+        white-space: nowrap !important;
       }
 
       .lookbook-topline h2 {
-        font-size: 15px !important;
+        font-size: 14px !important;
         line-height: 1 !important;
         margin: 0 !important;
         text-align: right !important;
+        white-space: nowrap !important;
       }
 
+      /* tape row BELOW title row */
       .lookbook-film-row {
-        padding: 10px 6px 10px !important;
+        position: relative !important;
+        border-top: 0 !important;
+        background: none !important;
+        padding: 20px 6px 22px !important;
         gap: 6px !important;
       }
 
+      .lookbook-film-row::before {
+        content: "" !important;
+        position: absolute !important;
+        left: 0 !important;
+        right: 0 !important;
+        top: 0 !important;
+        height: 10px !important;
+        background:
+          repeating-linear-gradient(
+            90deg,
+            transparent 0 28px,
+            #b48b3d 28px 34px
+          ) !important;
+        opacity: .95 !important;
+      }
+
       .lookbook-film-row figure {
-        flex: 0 0 62vw !important;
-        width: 62vw !important;
+        flex: 0 0 61vw !important;
+        width: 61vw !important;
         max-width: 228px !important;
       }
     }
@@ -305,9 +341,15 @@
         <p class="hero-sub">Vintage-inspired graphic streetwear, original art,<br>animation and interactive clothing.</p>
 
         <div class="hero-links">
-          <a href="https://lowxxy.myshopify.com" target="_blank" rel="noopener"><span>SHOP</span><strong>LOWXXY STORE</strong><b>→</b></a>
-          <a href="https://www.instagram.com/lowxxy.brand" target="_blank" rel="noopener"><span>FOLLOW</span><strong>@LOWXXY.BRAND</strong><b>→</b></a>
-          <a href="https://lowxxy.github.io/Lowxxy-AR/" target="_blank" rel="noopener"><span>SCAN + WATCH</span><strong>LOWXXY AR</strong><b>→</b></a>
+          <a href="https://lowxxy.myshopify.com" target="_blank" rel="noopener">
+            <span>SHOP</span><strong>LOWXXY STORE</strong><b>→</b>
+          </a>
+          <a href="https://www.instagram.com/lowxxy.brand" target="_blank" rel="noopener">
+            <span>FOLLOW</span><strong>@LOWXXY.BRAND</strong><b>→</b>
+          </a>
+          <a href="https://lowxxy.github.io/Lowxxy-AR/" target="_blank" rel="noopener">
+            <span>SCAN + WATCH</span><strong>LOWXXY AR</strong><b>→</b>
+          </a>
         </div>
 
         <a class="discover-link" href="#lookbook">EXPLORE LOOKBOOK <i></i></a>
