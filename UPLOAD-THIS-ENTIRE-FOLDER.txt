@@ -1,0 +1,15 @@
+LOWXXY DISCOVERY - INDEXNOW READY V4
+
+Upload the contents of this folder to the ROOT of your GitHub repo:
+Lowxxy/lowxxy-discover
+
+This package keeps the current V3 SEO/index.html and adds the IndexNow verification key file:
+b27ce62e11dc406a88ad800c9dd9bed4.txt
+
+The key file must sit beside index.html in the repo root.
+
+After GitHub Pages deploys, test:
+https://lowxxy.github.io/lowxxy-discover/b27ce62e11dc406a88ad800c9dd9bed4.txt
+
+That page should display only:
+b27ce62e11dc406a88ad800c9dd9bed4
