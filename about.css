@@ -4,3 +4,23 @@
 @media(max-width:900px){.about-hero-grid{gap:4%}.about-hero-copy h1{font-size:clamp(67px,9vw,110px)}.story-section,.story-inner{grid-template-columns:1fr 2.2fr;gap:6%}}
 @media(max-width:650px){.about-hero{min-height:auto}.about-hero-top span:last-child,.hero-foot span:last-child{display:none}.about-hero-grid{grid-template-columns:1fr;gap:42px;padding:60px 0 50px}.about-hero-copy h1{font-size:clamp(76px,18vw,116px);margin:22px 0}.about-hook{font-size:14px}.portrait-wrap{margin:0 auto;width:min(100%,320px)}.portrait-film{padding:14px 10px}.portrait-film img{max-height:56vh}.name-note{line-height:1.7}.hero-foot{padding-bottom:25px}.chapter-divider{gap:10px;font-size:8px;letter-spacing:1px}.story-section,.story-inner{grid-template-columns:1fr;gap:35px;padding-top:75px;padding-bottom:80px}.story-content h2{font-size:clamp(56px,12vw,83px)}.story-content p{font-size:14px;line-height:1.85}.label-rule{max-width:120px}.section-label .eyebrow{margin-bottom:15px}.section-label>span{font-size:8px}.story-quote{padding-left:19px}.timeline b{font-size:40px}.timeline span{font-size:8px}.story-symbol{width:80px}.about-closing{padding:80px 0}.about-closing h2{font-size:clamp(62px,13vw,105px)}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+
+
+/* V3: Desktop portrait framing. Mobile stays exactly as in the previous working version. */
+@media (min-width: 651px) {
+  .portrait-wrap { width: min(100%, 390px); }
+  .portrait-film {
+    aspect-ratio: 1 / 1;
+    display: block;
+  }
+  .portrait-film img {
+    position: absolute;
+    top: 17px;
+    left: 12px;
+    width: calc(100% - 24px);
+    height: calc(100% - 34px);
+    max-height: none;
+    object-fit: cover;
+    object-position: center top;
+  }
+}
