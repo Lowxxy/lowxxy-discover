@@ -48,11 +48,68 @@
       "inLanguage": "en-US"
     }
   ]
-}</script></head>
+}</script><style>
+/* LOWXXY horizontal collection filmstrip: isolated to the collection only */
+#collection .filmstrip-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:0 0 17px;color:#baa16e}
+#collection .filmstrip-instruction{font-size:10px;letter-spacing:2px;font-weight:700;line-height:1.6}
+#collection .filmstrip-buttons{display:flex;align-items:center;gap:14px;flex-shrink:0}
+#collection .filmstrip-position{font-size:11px;letter-spacing:2px;white-space:nowrap;color:#d1b77f;font-weight:700}
+#collection .filmstrip-buttons button{width:40px;height:39px;border:1px solid #8d774d;background:#17140e;color:#ddc18b;font-size:21px;cursor:pointer;touch-action:manipulation}
+#collection .filmstrip-buttons button:focus-visible,#collection .product-filmstrip:focus-visible{outline:2px solid #e2c58c;outline-offset:3px}
+#collection .filmstrip-buttons button:disabled{opacity:.32;cursor:default}
+#collection .filmstrip-shell{position:relative;border-top:1px solid #79623b;border-bottom:1px solid #79623b;background:#12100c;padding:21px 0;overflow:hidden}
+#collection .filmstrip-shell:before,#collection .filmstrip-shell:after{position:absolute;content:"";left:0;right:0;height:12px;z-index:1;pointer-events:none;background:repeating-linear-gradient(to right,#80683d 0 12px,transparent 12px 23px,#80683d 23px 25px,transparent 25px 38px);opacity:.68}
+#collection .filmstrip-shell:before{top:4px}
+#collection .filmstrip-shell:after{bottom:4px}
+#collection .product-filmstrip{display:flex;gap:18px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:15px;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;padding:9px 15px 13px;scrollbar-color:#927749 #17130e;scrollbar-width:thin}
+#collection .product-filmstrip>.product-card{flex:0 0 clamp(230px,30vw,354px);scroll-snap-align:start;min-width:0;align-self:stretch}
+#collection .product-filmstrip .film-frame{height:auto}
+#collection .product-filmstrip .frame-media{aspect-ratio:4/5}
+#collection .product-filmstrip .product-info{min-height:79px}
+#collection .product-filmstrip>.loading-products{flex:1 0 100%}
+@media(max-width:850px){#collection .product-filmstrip{grid-template-columns:none}#collection .product-filmstrip>.product-card{flex-basis:min(72vw,330px)}}
+@media(max-width:580px){#collection .filmstrip-controls{align-items:flex-start;flex-direction:column;gap:10px}#collection .filmstrip-instruction{font-size:9px;letter-spacing:1.3px}#collection .filmstrip-buttons{align-self:flex-end}#collection .product-filmstrip{gap:13px;grid-template-columns:none;padding-left:12px;padding-right:12px}#collection .product-filmstrip>.product-card{flex-basis:min(81vw,340px)}#collection .product-filmstrip .frame-media{aspect-ratio:4/4.7}#collection .product-filmstrip .product-info h3{font-size:20px}}
+@media(prefers-reduced-motion:reduce){#collection .product-filmstrip{scroll-behavior:auto}}
+</style></head>
 <body id="top"><header class="site-header"><div class="header-inner"><a aria-label="LOWXXY Home" class="brand" href="#top"><img alt="LOWXXY" src="lowxxy-wordmark-white-tight.png"/></a><nav aria-label="Main menu" class="main-nav"><a href="#collection">THE COLLECTION</a><a href="#vision">THE MEANING</a><a href="#experience">THE AR EXPERIENCE</a><a href="about.html">MEET THE ARTIST</a></nav><a class="header-shop" href="https://lowxxy.myshopify.com/">OFFICIAL SHOP ↗</a><button aria-expanded="false" aria-label="Open menu" class="menu-toggle">☰</button></div><nav class="mobile-nav" hidden="" id="mobile-nav"><a href="#collection">THE COLLECTION</a><a href="#vision">THE MEANING</a><a href="#experience">THE AR EXPERIENCE</a><a href="https://lowxxy.myshopify.com/">OFFICIAL SHOP ↗</a><a href="about.html">MEET THE ARTIST</a></nav></header>
 <main><section class="intro wrapper"><div class="intro-top"><span class="edition">THE LOWXXY WORLD <i></i> ISSUE 001</span><span class="intro-right">ORIGINAL STREETWEAR / BEYOND THE FABRIC</span></div><div class="intro-center"><img alt="LOWXXY crown" class="hero-crown" src="lowxxy-crown-white.png"/><p class="intro-kicker">FASHION THAT COMES TO LIFE</p><h1>STAND OUT.<br/><em>STAY HUMBLE.</em></h1><p class="intro-copy">Fusing animation and fashion together, LOWXXY is made for people who stand out by being themselves without needing to prove it. Original art, character, and story built into what you wear.</p><a class="primary-link" href="#collection">DISCOVER THE COLLECTION <span>↘</span></a><a class="primary-link" href="https://lowxxy.myshopify.com/" style="margin-top: 14px;" aria-label="Shop the official LOWXXY clothing store">SHOP LOWXXY <span>↗</span></a></div><div class="intro-bottom"><span>STAND OUT. STAY HUMBLE. KEEP IT LOWXXY.</span><span>SCROLL TO EXPLORE ↓</span></div></section>
-<section class="collection-section wrapper" id="collection"><div class="section-heading"><div><p class="eyebrow">01 / THE GARMENTS</p><h2>THE COLLECTION<span class="gold-dot">.</span></h2><p>Seven original designs. Hand-drawn artwork with frame-by-frame storytelling.</p></div><span class="section-index">THE FILM ARCHIVE / 001–007</span></div><div aria-live="polite" class="product-grid" id="product-grid"><div class="loading-products">LOADING THE COLLECTION…</div></div><noscript><a href="https://lowxxy.myshopify.com/collections/made-to-stand-out">Browse all seven LOWXXY shirt designs on the official store</a></noscript><p class="collection-note" hidden="" id="collection-note"></p><div class="collection-outro"><p class="collection-art-note">Every character design, clothing graphic, and animation is created by hand by an artist/animator.</p><a class="outline-link" href="https://lowxxy.myshopify.com/collections/made-to-stand-out">SEE ALL SHIRTS IN THE SHOP <span>↗</span></a></div></section>
+<section class="collection-section wrapper" id="collection"><div class="section-heading"><div><p class="eyebrow">01 / THE GARMENTS</p><h2>THE COLLECTION<span class="gold-dot">.</span></h2><p>Seven original designs. Hand-drawn artwork with frame-by-frame storytelling.</p></div><span class="section-index">THE FILM ARCHIVE / 001–007</span></div><div class="filmstrip-controls" aria-label="Collection browsing controls"><span class="filmstrip-instruction">← SWIPE THE FILM TO EXPLORE ALL SEVEN DESIGNS →</span><div class="filmstrip-buttons"><button type="button" class="filmstrip-prev" aria-label="Previous shirt">←</button><span class="filmstrip-position" aria-live="polite">01 / 07</span><button type="button" class="filmstrip-next" aria-label="Next shirt">→</button></div></div><div class="filmstrip-shell"><div aria-live="polite" aria-label="LOWXXY horizontal shirt collection" class="product-grid product-filmstrip" id="product-grid" tabindex="0"><div class="loading-products">LOADING THE COLLECTION…</div></div></div><noscript><a href="https://lowxxy.myshopify.com/collections/made-to-stand-out">Browse all seven LOWXXY shirt designs on the official store</a></noscript><p class="collection-note" hidden="" id="collection-note"></p><div class="collection-outro"><p class="collection-art-note">Every character design, clothing graphic, and animation is created by hand by an artist/animator.</p><a class="outline-link" href="https://lowxxy.myshopify.com/collections/made-to-stand-out">SEE ALL SHIRTS IN THE SHOP <span>↗</span></a></div></section>
 <section class="vision-section" id="vision"><div class="wrapper vision-inner"><div class="vision-label"><span class="eyebrow">02 / THE MEANING</span><div class="vision-rule"></div></div><div class="vision-text"><p class="overline">LOWXXY / low·key</p><h2>A STATEMENT OF<br/><em>INDIVIDUALITY.</em></h2><p>Fusing animation and fashion together, LOWXXY is made for people who stand out by being themselves without needing to prove it. Each character represents that humble mindset in its own way.</p><p class="vision-secondary">From the clothing art to the animated characters, everything is hand made frame by frame by an artist/animator, so every piece carries both craftsmanship and personality.</p><div class="vision-sign">STAND OUT. STAY HUMBLE. <span>KEEP IT LOWXXY.</span></div></div></div></section>
 <section class="experience-section wrapper" id="experience"><div class="experience-mark"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><img alt="LOWXXY character face" src="lowxxy-character-face.png"/></div><div class="experience-copy"><span class="eyebrow">03 / THE EXPERIENCE</span><h2>FUSING<br/><em>ANIMATION &amp; FASHION.</em></h2><p>The LOWXXY AR experience brings those characters to life through animation, connecting the story behind the design with the clothing you wear. Scan supported designs and watch the artwork move from fabric into your world.</p><a class="primary-link" href="https://lowxxy.github.io/Lowxxy-AR/">EXPLORE LOWXXY AR <span>↗</span></a><small>HAND-DRAWN ART · FRAME-BY-FRAME ANIMATION · INTERACTIVE STREETWEAR</small></div></section>
 <section class="founder-section wrapper"><div><p class="eyebrow">04 / THE PERSON BEHIND THE LABEL</p><h2>MEET THE <br/>ARTIST.</h2></div><div class="founder-invite"><p>Every design starts with a story. Meet Slyce Bowen—the artist and animator behind LOWXXY, its characters, and the experience that brings them to life.</p><a class="outline-link" href="about.html">READ THE FOUNDER STORY ↗</a></div></section></main>
-<footer><div class="wrapper"><div class="footer-head"><img alt="LOWXXY" src="lowxxy-wordmark-white-tight.png"/><span>STAND OUT. STAY HUMBLE.</span></div><div class="footer-bottom"><span>© <span id="year">2026</span> LOWXXY.</span><div><a href="about.html">ABOUT THE ARTIST</a><a href="https://lowxxy.myshopify.com/">LOWXXY OFFICIAL CLOTHING STORE</a><a href="https://www.instagram.com/lowxxy.brand">INSTAGRAM</a><a href="https://www.youtube.com/@Lowxxy">YOUTUBE</a><a href="#top">BACK TO TOP ↑</a></div></div></div></footer><script defer="" src="script.js"></script></body></html>
+<footer><div class="wrapper"><div class="footer-head"><img alt="LOWXXY" src="lowxxy-wordmark-white-tight.png"/><span>STAND OUT. STAY HUMBLE.</span></div><div class="footer-bottom"><span>© <span id="year">2026</span> LOWXXY.</span><div><a href="about.html">ABOUT THE ARTIST</a><a href="https://lowxxy.myshopify.com/">LOWXXY OFFICIAL CLOTHING STORE</a><a href="https://www.instagram.com/lowxxy.brand">INSTAGRAM</a><a href="https://www.youtube.com/@Lowxxy">YOUTUBE</a><a href="#top">BACK TO TOP ↑</a></div></div></div></footer><script defer="" src="script.js"></script><script>
+/* LOWXXY filmstrip controls: native touch swiping and optional arrows */
+(()=>{
+  const track=document.querySelector('#product-grid');
+  const prev=document.querySelector('.filmstrip-prev');
+  const next=document.querySelector('.filmstrip-next');
+  const position=document.querySelector('.filmstrip-position');
+  if(!track||!prev||!next||!position)return;
+  const cards=()=>Array.from(track.querySelectorAll('.product-card'));
+  const activeIndex=()=>{
+    const list=cards();
+    if(!list.length)return 0;
+    const left=track.getBoundingClientRect().left;
+    let best=0,dist=Infinity;
+    list.forEach((card,i)=>{const d=Math.abs(card.getBoundingClientRect().left-left-15);if(d<dist){dist=d;best=i;}});
+    return best;
+  };
+  const update=()=>{
+    const n=cards().length, at=activeIndex();
+    position.textContent=String(n?at+1:0).padStart(2,'0')+' / '+String(n).padStart(2,'0');
+    prev.disabled=!n||at===0;next.disabled=!n||at===n-1;
+  };
+  const move=delta=>{
+    const list=cards();if(!list.length)return;
+    const idx=Math.min(list.length-1,Math.max(0,activeIndex()+delta));
+    if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){track.scrollLeft=list[idx].offsetLeft-list[0].offsetLeft;}
+    else {track.scrollTo({left:list[idx].offsetLeft-list[0].offsetLeft,behavior:'smooth'});}
+  };
+  prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
+  track.addEventListener('scroll',()=>requestAnimationFrame(update),{passive:true});
+  track.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();move(e.key==='ArrowRight'?1:-1);}});
+  new MutationObserver(update).observe(track,{childList:true});
+  window.addEventListener('resize',update);
+  update();
+})();
+</script></body></html>
