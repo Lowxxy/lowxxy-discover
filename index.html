@@ -64,6 +64,8 @@
 #collection .product-filmstrip{display:flex;gap:18px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:15px;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;padding:9px 15px 13px;scrollbar-color:#927749 #17130e;scrollbar-width:thin}
 #collection .product-filmstrip>.product-card{flex:0 0 clamp(230px,30vw,354px);scroll-snap-align:start;min-width:0;align-self:stretch}
 #collection .product-filmstrip .film-frame{height:auto}
+/* Hide the original vertical sprocket tracks on each photo; retain the horizontal filmstrip edges. */
+#collection .product-filmstrip .film-frame::before,#collection .product-filmstrip .film-frame::after{display:none}
 #collection .product-filmstrip .frame-media{aspect-ratio:4/5}
 #collection .product-filmstrip .product-info{min-height:79px}
 #collection .product-filmstrip>.loading-products{flex:1 0 100%}
