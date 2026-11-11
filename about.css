@@ -24,3 +24,28 @@
     object-position: center top;
   }
 }
+
+
+/* Minimal gold portrait — no film sprockets or film-label overlay. */
+.portrait-film {
+  border: 1px solid #ac8c51;
+  background: #100f0c;
+  padding: 5px;
+  box-shadow: 0 16px 50px rgba(0,0,0,.32);
+}
+.portrait-film::before, .portrait-film::after, .portrait-code { display: none; }
+.portrait-film img { filter: grayscale(.08) contrast(1.025); }
+@media (min-width:651px) {
+  .portrait-wrap { width: min(100%, 380px); }
+  .portrait-film { aspect-ratio: 1.08 / 1; }
+  .portrait-film img {
+    top: 5px; left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    object-fit: cover; object-position: center top;
+  }
+}
+@media (max-width:650px) {
+  /* Keep the previous approved phone composition; only remove the film border. */
+  .portrait-film { padding: 5px; }
+}
