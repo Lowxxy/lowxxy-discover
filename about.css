@@ -21,10 +21,51 @@
   }
 }
 
-/* Both mobile and desktop: clean gold rim, no film sprocket strips. */
-.portrait-film { border: 1px solid #b69a5f; }
-.portrait-film::before,
-.portrait-film::after {
-  content: none;
-  display: none;
+
+/* HORIZONTAL PHOTO UPDATE */
+.portrait-wrap{
+  width:min(100%, 620px);
+}
+.portrait-film{
+  width:100%;
+  padding:14px 12px;
+}
+.portrait-film img{
+  width:100%;
+  height:auto;
+  max-height:none;
+  aspect-ratio:auto;
+  object-fit:contain;
+  object-position:center center;
+  display:block;
+}
+@media (min-width: 1100px){
+  .about-hero-grid{
+    grid-template-columns: 1fr 1.12fr;
+    gap:5%;
+  }
+  .portrait-wrap{
+    width:min(100%, 640px);
+  }
+}
+@media (max-width: 860px){
+  .portrait-wrap{
+    width:min(100%, 520px);
+    margin:0 auto;
+  }
+  .portrait-film{
+    padding:12px 10px;
+  }
+}
+@media (max-width: 560px){
+  .portrait-wrap{
+    width:100%;
+  }
+  .portrait-film{
+    padding:10px 8px;
+  }
+  .portrait-film:before,
+  .portrait-film:after{
+    width:6px;
+  }
 }
