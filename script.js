@@ -1,36 +1,10 @@
-(function () {
-  'use strict';
-  var menu = document.querySelector('.menu-button');
-  var mobile = document.getElementById('mobile-nav');
-  if (menu && mobile) {
-    menu.addEventListener('click', function () {
-      var nextOpen = mobile.hasAttribute('hidden');
-      if (nextOpen) mobile.removeAttribute('hidden'); else mobile.setAttribute('hidden', '');
-      menu.setAttribute('aria-expanded', String(nextOpen));
-      menu.setAttribute('aria-label', nextOpen ? 'Close menu' : 'Open menu');
-    });
-    mobile.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        mobile.setAttribute('hidden', '');
-        menu.setAttribute('aria-expanded', 'false');
-        menu.setAttribute('aria-label', 'Open menu');
-      });
-    });
-  }
-  document.querySelectorAll('.piece-photo[data-front][data-back]').forEach(function (button) {
-    var picture = button.querySelector('img');
-    if (!picture) return;
-    button.addEventListener('click', function () {
-      var reversed = button.getAttribute('data-reversed') === 'true';
-      var next = reversed ? button.dataset.front : button.dataset.back;
-      var preload = new Image();
-      preload.onload = function () {
-        picture.src = next;
-        button.setAttribute('data-reversed', String(!reversed));
-      };
-      preload.src = next;
-    });
-  });
-  var year = document.getElementById('year');
-  if (year) year.textContent = String(new Date().getFullYear());
+(function(){
+  var year=document.getElementById('year');if(year)year.textContent=new Date().getFullYear();
+  var toggle=document.querySelector('.mobile-toggle');var mobile=document.getElementById('mobile-nav');
+  if(toggle&&mobile){toggle.addEventListener('click',function(){var opening=mobile.hidden;mobile.hidden=!opening;toggle.setAttribute('aria-expanded',String(opening));toggle.setAttribute('aria-label',opening?'Close navigation':'Open navigation')});mobile.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mobile.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation')})})}
+  document.querySelectorAll('.gallery-image').forEach(function(btn){btn.addEventListener('click',function(){var img=btn.querySelector('img');var alternate=btn.getAttribute('data-back');var current=btn.getAttribute('data-front');if(!img||!alternate)return;img.src=alternate;btn.setAttribute('data-front',alternate);btn.setAttribute('data-back',current)})});
+  // Shopify theme exports include the original file references, but not the image bytes.
+  // Try the storefront CDN when a copied local asset is absent; hide images that genuinely cannot be loaded.
+  var frames=Array.from(document.querySelectorAll('.shopify-image'));
+  frames.forEach(function(frame){var img=frame.querySelector('img');if(!img)return;img.addEventListener('error',function(){var fallback=img.getAttribute('data-fallback');if(fallback&&!img.dataset.usedFallback){img.dataset.usedFallback='1';img.src=fallback}else{frame.hidden=true;if(frames.every(function(item){return item.hidden})){var section=document.getElementById('shopify-strip');if(section)section.hidden=true}}});});
 })();
