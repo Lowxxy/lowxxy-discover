@@ -20,3 +20,11 @@
     object-position: center center;
   }
 }
+
+/* Both mobile and desktop: clean gold rim, no film sprocket strips. */
+.portrait-film { border: 1px solid #b69a5f; }
+.portrait-film::before,
+.portrait-film::after {
+  content: none;
+  display: none;
+}
