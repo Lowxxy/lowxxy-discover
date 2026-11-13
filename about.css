@@ -69,3 +69,34 @@
     width:6px;
   }
 }
+
+/* LOWXXY ABOUT PHOTO: clean, thin gold rim on every screen size.
+   Overrides the previous portrait-film sprocket and inset styles. */
+.portrait-film {
+  box-sizing: border-box;
+  padding: 0;
+  border: 2px solid #b69a5f;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+  aspect-ratio: auto;
+}
+.portrait-film::before,
+.portrait-film::after {
+  content: none !important;
+  display: none !important;
+}
+.portrait-film img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  filter: none;
+}
+@media (max-width: 860px) {
+  .portrait-film { padding: 0; }
+}
+@media (max-width: 560px) {
+  .portrait-film { padding: 0; }
+}
