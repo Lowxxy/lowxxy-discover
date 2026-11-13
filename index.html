@@ -72,6 +72,96 @@
 @media(max-width:850px){#collection .product-filmstrip{grid-template-columns:none}#collection .product-filmstrip>.product-card{flex-basis:min(72vw,330px)}}
 @media(max-width:580px){#collection .filmstrip-controls{align-items:flex-start;flex-direction:column;gap:10px}#collection .filmstrip-instruction{font-size:9px;letter-spacing:1.3px}#collection .filmstrip-buttons{align-self:flex-end}#collection .product-filmstrip{gap:13px;grid-template-columns:none;padding-left:12px;padding-right:12px}#collection .product-filmstrip>.product-card{flex-basis:min(81vw,340px)}#collection .product-filmstrip .frame-media{aspect-ratio:4/4.7}#collection .product-filmstrip .product-info h3{font-size:20px}}
 @media(prefers-reduced-motion:reduce){#collection .product-filmstrip{scroll-behavior:auto}}
+
+/* NOV 2026: Match the LOWXXY Shopify "Made to Stand Out" film-tape presentation.
+   Collection-only styles; navigation, links, JS, images, and all other sections unchanged. */
+#collection .filmstrip-shell{
+  background:#080807;
+  border-top:3px solid #a48a4e;
+  border-bottom:3px solid #a48a4e;
+  padding:32px 0 34px;
+  box-shadow:inset 0 4px 0 #17140c,inset 0 -4px 0 #17140c;
+}
+#collection .filmstrip-shell::before,
+#collection .filmstrip-shell::after{
+  height:23px;
+  left:0;right:0;
+  background:repeating-linear-gradient(to right,#a48d55 0 17px,transparent 17px 34px);
+  opacity:1;
+}
+#collection .filmstrip-shell::before{top:13px}
+#collection .filmstrip-shell::after{bottom:13px}
+#collection .product-filmstrip{
+  gap:14px;
+  padding:9px 12px 13px;
+  scrollbar-color:#a18a57 #18140c;
+}
+#collection .product-filmstrip>.product-card{
+  flex:0 0 clamp(250px,28vw,344px);
+  border:3px solid #aa9358;
+  border-radius:4px;
+  background:#070706;
+  overflow:hidden;
+  padding:8px 8px 12px;
+  box-shadow:inset 0 0 0 1px #30291b;
+}
+#collection .product-filmstrip .film-frame{
+  padding:0;
+  margin:0;
+  background:#090908;
+  border:0;
+  border-radius:0;
+  overflow:visible;
+}
+#collection .product-filmstrip .frame-media{
+  margin:0;
+  aspect-ratio:4/4.65;
+  background:#0b0b0b;
+  overflow:hidden;
+}
+#collection .product-filmstrip .film-counter{
+  top:7px;left:7px;
+  padding:5px 7px;
+  border:1px solid #5a4a2c;
+  background:#0b0b0bea;
+  color:#9b8653;
+  font-size:9px;
+}
+#collection .product-filmstrip .frame-foot{
+  right:9px;bottom:10px;
+  border:1px solid #554527;
+  font-size:9px;
+}
+#collection .product-filmstrip .product-info{
+  min-height:90px;
+  align-items:center;
+  gap:8px;
+  padding:13px 8px 0;
+}
+#collection .product-filmstrip .product-info h3{
+  font-family:Inter,Arial,sans-serif;
+  font-size:16px;
+  line-height:1.2;
+  font-weight:600;
+  letter-spacing:-.02em;
+  text-transform:none;
+  color:#d3c19b;
+}
+#collection .product-filmstrip .product-meta{color:#988250}
+#collection .product-filmstrip .product-control{
+  font-size:9px;
+  padding:8px 7px;
+  border-color:#947b46;
+}
+#collection .product-filmstrip .photo-dots{margin-top:9px}
+@media(max-width:580px){
+  #collection .filmstrip-shell{padding:31px 0 33px}
+  #collection .product-filmstrip{gap:12px;padding-left:10px;padding-right:10px}
+  #collection .product-filmstrip>.product-card{flex-basis:min(81vw,330px)}
+  #collection .product-filmstrip .frame-media{aspect-ratio:4/4.65}
+  #collection .product-filmstrip .product-info h3{font-size:16px}
+  #collection .filmstrip-shell::before,#collection .filmstrip-shell::after{background:repeating-linear-gradient(to right,#a48d55 0 14px,transparent 14px 28px);height:20px}
+}
 </style></head>
 <body id="top"><header class="site-header"><div class="header-inner"><a aria-label="LOWXXY Home" class="brand" href="#top"><img alt="LOWXXY" src="lowxxy-wordmark-white-tight.png"/></a><nav aria-label="Main menu" class="main-nav"><a href="#collection">THE COLLECTION</a><a href="#vision">THE MEANING</a><a href="#experience">THE AR EXPERIENCE</a><a href="about.html">MEET THE ARTIST</a></nav><a class="header-shop" href="https://lowxxy.myshopify.com/">OFFICIAL SHOP ↗</a><button aria-expanded="false" aria-label="Open menu" class="menu-toggle">☰</button></div><nav class="mobile-nav" hidden="" id="mobile-nav"><a href="#collection">THE COLLECTION</a><a href="#vision">THE MEANING</a><a href="#experience">THE AR EXPERIENCE</a><a href="https://lowxxy.myshopify.com/">OFFICIAL SHOP ↗</a><a href="about.html">MEET THE ARTIST</a></nav></header>
 <main><section class="intro wrapper"><div class="intro-top"><span class="edition">THE LOWXXY WORLD <i></i> ISSUE 001</span><span class="intro-right">ORIGINAL STREETWEAR / BEYOND THE FABRIC</span></div><div class="intro-center"><img alt="LOWXXY crown" class="hero-crown" src="lowxxy-crown-white.png"/><p class="intro-kicker">FASHION THAT COMES TO LIFE</p><h1>STAND OUT.<br/><em>STAY HUMBLE.</em></h1><p class="intro-copy">Fusing animation and fashion together, LOWXXY is made for people who stand out by being themselves without needing to prove it. Original art, character, and story built into what you wear.</p><a class="primary-link" href="#collection">DISCOVER THE COLLECTION <span>↘</span></a><a class="primary-link" href="https://lowxxy.myshopify.com/" style="margin-top: 14px;" aria-label="Shop the official LOWXXY clothing store">SHOP LOWXXY <span>↗</span></a></div><div class="intro-bottom"><span>STAND OUT. STAY HUMBLE. KEEP IT LOWXXY.</span><span>SCROLL TO EXPLORE ↓</span></div></section>
